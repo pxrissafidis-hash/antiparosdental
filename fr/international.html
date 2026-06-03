@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Patients internationaux — Soins dentaires à Antiparos & Paros | Antiparos Dental</title>
+<meta name="description" content="Cabinet dentaire francophone à Antiparos, près de Paros, Cyclades. Implants, chirurgie orale et dentisterie esthétique pour visiteurs et patients internationaux. Certifié ITI.">
+<link rel="canonical" href="https://antiparosdental.com/fr/international.html">
+<link rel="alternate" hreflang="el" href="https://antiparosdental.com/international.html">
+<link rel="alternate" hreflang="en" href="https://antiparosdental.com/en/international.html">
+<link rel="alternate" hreflang="fr" href="https://antiparosdental.com/fr/international.html">
+<link rel="alternate" hreflang="x-default" href="https://antiparosdental.com/international.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/theme.css">
+<style>
+.page-hero{padding:140px 0 0}
+.page-hero h1{font-size:clamp(2.6rem,6vw,5rem);color:var(--c-sea-deep);max-width:16ch}
+.page-hero .lead{font-size:clamp(1.05rem,1.5vw,1.25rem);color:var(--c-ink);max-width:56ch;margin-top:1.4rem}
+.hero-img{margin-top:3rem;aspect-ratio:21/9;background:linear-gradient(120deg,#7fb0c8,#3d7a98 60%,#1e5a78);border-radius:var(--r);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.9);font-family:var(--font-display);font-style:italic}
+.how{padding:clamp(4rem,8vw,7rem) 0}
+.how-head{max-width:44ch;margin-bottom:3rem}
+.how-head h2{font-size:clamp(1.8rem,3.5vw,2.8rem);color:var(--c-sea-deep)}
+.how-head p{color:var(--c-ink-soft);margin-top:1rem;max-width:56ch}
+.how-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--c-line);border:1px solid var(--c-line)}
+.how-step{background:var(--c-bg);padding:2rem 1.6rem;border-top:2px solid transparent;transition:.3s}
+.how-step:hover{border-top-color:var(--c-sea);background:#fff}
+.how-step .n{font-family:var(--font-display);font-style:italic;font-size:2rem;color:var(--c-sea)}
+.how-step h4{font-family:var(--font-display);font-size:1.2rem;margin:.6rem 0 .5rem;color:var(--c-ink)}
+.how-step p{font-size:.85rem;color:var(--c-ink-soft)}
+.stay{background:var(--c-bg-alt)}
+.stay-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+.stay-photo{aspect-ratio:4/3;background:linear-gradient(135deg,#9fb6bd,#3d7a98);border-radius:var(--r);position:relative;overflow:hidden}
+.stay-photo span{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.9);font-family:var(--font-display);font-style:italic;text-align:center;padding:2rem}
+.stay h2{font-size:clamp(1.8rem,3.5vw,2.6rem);color:var(--c-sea-deep);margin-bottom:1.1rem}
+.stay p{color:var(--c-ink-soft);margin-bottom:1rem;max-width:50ch}
+.stay .fineprint{font-size:.8rem;font-style:italic;color:var(--c-ink-soft);max-width:50ch}
+.enquire{padding:clamp(4rem,8vw,7rem) 0}
+.enquire-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:clamp(2rem,5vw,4rem);align-items:start}
+.enquire h2{font-size:clamp(1.8rem,3.5vw,2.6rem);color:var(--c-sea-deep);margin-bottom:1rem}
+.field{margin-bottom:1.1rem}
+.field label{display:block;font-size:.8rem;letter-spacing:.04em;color:var(--c-ink-soft);margin-bottom:.4rem}
+.field input,.field select,.field textarea{width:100%;padding:.85rem 1rem;border:1px solid var(--c-line);border-radius:var(--r);background:var(--c-white);font-family:var(--font-body);font-size:.95rem;color:var(--c-ink)}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--c-sea)}
+.field textarea{min-height:120px;resize:vertical}
+.check{display:flex;gap:.6rem;align-items:flex-start;margin-bottom:1.4rem;font-size:.9rem;color:var(--c-ink-soft)}
+.check input{width:auto;margin-top:.2rem}
+.fallback{background:var(--c-sea-mist);padding:2rem;border-radius:var(--r);border:1px solid var(--c-line)}
+.fallback h3{font-family:var(--font-display);font-size:1.5rem;color:var(--c-sea-deep);margin-bottom:.8rem}
+.fallback p{font-size:.92rem;color:var(--c-ink-soft);margin-bottom:1.2rem}
+.fallback a{display:block;padding:.85rem 1rem;border-radius:var(--r);margin-bottom:.7rem;font-size:.92rem;text-align:center;transition:.2s}
+.fb-wa{background:var(--c-wa);color:#fff}
+.fb-mail{border:1px solid var(--c-sea);color:var(--c-sea)}
+.map-sec{padding-bottom:0}
+.map-wrap{margin-top:2rem;border-radius:var(--r);overflow:hidden;border:1px solid var(--c-line)}
+.map-wrap iframe{width:100%;height:420px;border:0;display:block}
+@media(max-width:860px){.how-row{grid-template-columns:1fr;border:none}.stay-grid,.enquire-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header id="hdr">
+  <nav>
+    <a class="brand" href="index.html">Antiparos Dental<small>Aesthetics</small></a>
+    <div class="nav-links">
+      <a href="index.html#services">Soins</a>
+      <a href="about.html">Notre histoire</a>
+      <a href="international.html">International</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+    <div class="lang">
+      <button onclick="location.href='../international.html'">ΕΛ</button>
+      <button onclick="location.href='../en/international.html'">EN</button>
+      <button class="active">FR</button>
+    </div>
+  </nav>
+</header>
+
+<div class="page-hero wrap">
+  <div class="crumb"><a href="index.html">Accueil</a> · Patients internationaux</div>
+  <p class="eyebrow">Patients internationaux & francophones</p>
+  <h1>Déjà sur l'île ? Prenez soin de votre sourire ici.</h1>
+  <p class="lead">Visiteurs et résidents d'Antiparos et de Paros voisine trouvent des soins dentaires modernes à proximité — par des dentistes expérimentés, dans une langue qu'ils comprennent. Nous travaillons en grec, anglais et français, pour les implants, la chirurgie orale et la restauration esthétique.</p>
+  <div class="hero-img">[ Photo : vue sur l'Égée / Antiparos — à ajouter ]</div>
+</div>
+
+<section class="wrap how">
+  <div class="how-head">
+    <p class="eyebrow">Comment ça marche</p>
+    <h2>Que vous soyez déjà ici ou que vous planifiiez votre visite</h2>
+    <p>De nombreux patients nous trouvent alors qu'ils sont déjà à Antiparos ou Paros pour leurs vacances. D'autres, notamment des francophones du Canada et d'ailleurs en Europe, préfèrent associer leurs soins à un séjour paisible sur l'île. Quel que soit votre cas, nous rendons le processus clair.</p>
+  </div>
+  <div class="how-row">
+    <div class="how-step"><div class="n">01</div><h4>Premier contact</h4><p>Écrivez-nous votre demande. Nous répondons en grec, anglais ou français.</p></div>
+    <div class="how-step"><div class="n">02</div><h4>Évaluation à distance</h4><p>À partir de ce que vous nous envoyez (par ex. radiographies), nous vous donnons une première estimation et un plan.</p></div>
+    <div class="how-step"><div class="n">03</div><h4>Organisation de la visite</h4><p>Nous organisons vos rendez-vous en un minimum de visites et vous informons du temps et du coût.</p></div>
+    <div class="how-step"><div class="n">04</div><h4>Traitement & suivi</h4><p>Nous réalisons votre traitement sur l'île et restons disponibles pour le suivi.</p></div>
+  </div>
+</section>
+
+<section class="stay">
+  <div class="wrap stay-grid">
+    <div class="stay-photo"><span>[ Photo : "Little Bee" / vue sur l'Égée — à ajouter ]</span></div>
+    <div>
+      <p class="eyebrow">Séjourner sur l'île</p>
+      <h2>Un refuge paisible avec vue sur l'Égée</h2>
+      <p>Pour votre séjour, nous pouvons vous proposer un hébergement dans une maison cycladique sereine à Antiparos, avec une vue magnifique sur la mer Égée et une cour ensoleillée — idéale pour vous reposer avant ou après le traitement.</p>
+      <p class="fineprint">L'hébergement est facultatif et constitue un service distinct, avec sa propre réservation via Airbnb. Nous serons heureux de vous aider avec des informations et d'autres options selon vos besoins.</p>
+      <a class="btn btn-primary" href="https://www.airbnb.fr/rooms/1071099792835933027" style="margin-top:.6rem" target="_blank" rel="noopener">Voir l'hébergement →</a>
+    </div>
+  </div>
+</section>
+
+<section class="wrap enquire">
+  <div class="enquire-grid">
+    <div>
+      <p class="eyebrow">Contactez-nous</p>
+      <h2>Envoyez-nous votre demande</h2>
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="[ WEB3FORMS_ACCESS_KEY ]">
+        <input type="hidden" name="subject" value="Nouvelle demande patient international — Antiparos Dental">
+        <input type="checkbox" name="botcheck" style="display:none">
+        <div class="field"><label for="name">Nom complet</label><input id="name" type="text" name="name" required></div>
+        <div class="field"><label for="email">Email</label><input id="email" type="email" name="email" required></div>
+        <div class="field"><label for="country">Pays de résidence</label><input id="country" type="text" name="country" placeholder="ex. Canada"></div>
+        <div class="field"><label for="treatment">Ce qui vous intéresse</label>
+          <select id="treatment" name="treatment">
+            <option value="">Choisir…</option>
+            <option>Implants</option>
+            <option>Chirurgie orale / dents de sagesse</option>
+            <option>Dentisterie esthétique</option>
+            <option>Orthodontie invisible (gouttières)</option>
+            <option>Parodontologie</option>
+            <option>Je ne sais pas encore</option>
+          </select>
+        </div>
+        <div class="field"><label for="message">Votre message</label><textarea id="message" name="message" placeholder="Décrivez brièvement ce dont vous avez besoin. Vous pouvez aussi indiquer des dates possibles."></textarea></div>
+        <label class="check"><input type="checkbox" name="accommodation" value="oui"> Je souhaite de l'aide pour l'hébergement sur l'île</label>
+        <button class="btn btn-primary" type="submit">Envoyer la demande</button>
+      </form>
+    </div>
+    <div class="fallback">
+      <h3>Vous préférez nous joindre directement ?</h3>
+      <p>Vous n'avez pas besoin de remplir le formulaire. Contactez-nous comme vous voulez — nous répondons en grec, anglais et français.</p>
+      <a class="fb-wa" href="https://wa.me/306936666109?text=Bonjour,%20je%20suis%20un%20patient%20international%20intéressé%20par%20un%20traitement.">WhatsApp</a>
+      <a class="fb-mail" href="mailto:pxrissafidis@gmail.com">pxrissafidis@gmail.com</a>
+    </div>
+  </div>
+</section>
+
+<section class="wrap map-sec">
+  <p class="eyebrow">Où nous trouver</p>
+  <div class="map-wrap">
+    <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+      src="https://www.google.com/maps?q=37.0406069,25.0802788&z=16&output=embed"
+      title="Antiparos Dental Aesthetics — carte"></iframe>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-grid">
+    <div>
+      <h4>Antiparos Dental</h4>
+      <p>Main road, Antiparos island<br>Antiparos 840 07, Cyclades, Grèce</p>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p>
+        <a href="https://wa.me/306936666109">WhatsApp</a><br>
+        Dr Pavlos Chrysafidis<br><a href="tel:+306936666109">+30 693 666 6109</a><br>
+        Dr Christos Chrysafidis<br><a href="tel:+306936920038">+30 693 692 0038</a><br>
+        <a href="mailto:pxrissafidis@gmail.com">pxrissafidis@gmail.com</a>
+      </p>
+    </div>
+    <div>
+      <h4>Horaires</h4>
+      <p>Lundi–Dimanche<br>09h00–13h00 &amp; 17h00–21h00<br><a href="emergency.html" style="font-size:.8rem">Urgence hors horaires ?</a></p>
+    </div>
+  </div>
+  <div class="wrap foot-bottom">
+    <span>© 2026 Antiparos Dental</span>
+    <span>Conçu dans le respect du secret médical</span>
+    <span style="opacity:.7">Photo d'Antiparos : <a href="https://unsplash.com/@dimeloper" target="_blank" rel="noopener" style="text-decoration:underline">Dimitris Kiriakakis</a> / Unsplash</span>
+  </div>
+</footer>
+
+<div class="float">
+  <a class="fab fab-emergency" href="emergency.html"><b>Urgence ?</b></a>
+  <a class="fab fab-wa" href="https://wa.me/306936666109">WhatsApp</a>
+</div>
+
+<script>
+const hdr=document.getElementById('hdr');
+addEventListener('scroll',()=>hdr.classList.toggle('scrolled',scrollY>20));
+</script>
+</body>
+</html>
