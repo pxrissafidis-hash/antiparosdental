@@ -52,6 +52,10 @@
 .fallback a{display:block;padding:.85rem 1rem;border-radius:var(--r);margin-bottom:.7rem;font-size:.92rem;text-align:center;transition:.2s}
 .fb-wa{background:var(--c-wa);color:#fff}
 .fb-mail{border:1px solid var(--c-sea);color:var(--c-sea)}
+.form-status{padding:1rem 1.2rem;border-radius:var(--r);margin-top:1rem;font-size:.92rem;display:none}
+.form-status.ok{display:block;background:var(--c-sea-mist);border:1px solid var(--c-sea);color:var(--c-sea-deep)}
+.form-status.err{display:block;background:#fdecec;border:1px solid #d9534f;color:#a33}
+.btn[disabled]{opacity:.6;cursor:wait}
 .map-sec{padding-bottom:0}
 .map-wrap{margin-top:2rem;border-radius:var(--r);overflow:hidden;border:1px solid var(--c-line)}
 .map-wrap iframe{width:100%;height:420px;border:0;display:block}
@@ -117,10 +121,11 @@
     <div>
       <p class="eyebrow">Contactez-nous</p>
       <h2>Envoyez-nous votre demande</h2>
-      <form action="https://api.web3forms.com/submit" method="POST">
-        <input type="hidden" name="access_key" value="[ WEB3FORMS_ACCESS_KEY ]">
+      <form id="enquiry-form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="7b6085aa-0ea9-4773-8cc9-8b16b4b12d0c">
         <input type="hidden" name="subject" value="Nouvelle demande patient international — Antiparos Dental">
-        <input type="checkbox" name="botcheck" style="display:none">
+        <input type="hidden" name="from_name" value="Antiparos Dental — Formulaire patients internationaux">
+        <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display:none !important">
         <div class="field"><label for="name">Nom complet</label><input id="name" type="text" name="name" required></div>
         <div class="field"><label for="email">Email</label><input id="email" type="email" name="email" required></div>
         <div class="field"><label for="country">Pays de résidence</label><input id="country" type="text" name="country" placeholder="ex. Canada"></div>
@@ -138,6 +143,7 @@
         <div class="field"><label for="message">Votre message</label><textarea id="message" name="message" placeholder="Décrivez brièvement ce dont vous avez besoin. Vous pouvez aussi indiquer des dates possibles."></textarea></div>
         <label class="check"><input type="checkbox" name="accommodation" value="oui"> Je souhaite de l'aide pour l'hébergement sur l'île</label>
         <button class="btn btn-primary" type="submit">Envoyer la demande</button>
+        <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
       </form>
     </div>
     <div class="fallback">
@@ -168,8 +174,8 @@
       <h4>Contact</h4>
       <p>
         <a href="https://wa.me/306936666109">WhatsApp</a><br>
-        Dr Pavlos Chrysafidis<br><a href="tel:+306936666109">+30 693 666 6109</a><br>
-        Dr Christos Chrysafidis<br><a href="tel:+306936920038">+30 693 692 0038</a><br>
+        Pavlos Chrysafidis<br><a href="tel:+306936666109">+30 693 666 6109</a><br>
+        Christos Chrysafidis<br><a href="tel:+306936920038">+30 693 692 0038</a><br>
         <a href="mailto:pxrissafidis@gmail.com">pxrissafidis@gmail.com</a>
       </p>
     </div>
@@ -193,6 +199,35 @@
 <script>
 const hdr=document.getElementById('hdr');
 addEventListener('scroll',()=>hdr.classList.toggle('scrolled',scrollY>20));
+
+(function(){
+  const form=document.getElementById('enquiry-form');
+  if(!form) return;
+  const status=document.getElementById('form-status');
+  const btn=form.querySelector('button[type="submit"]');
+  const btnText=btn.textContent;
+  form.addEventListener('submit',async function(e){
+    e.preventDefault();
+    status.className='form-status';
+    btn.disabled=true; btn.textContent='Envoi…';
+    try{
+      const res=await fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}});
+      const data=await res.json();
+      if(res.ok && data.success){
+        form.reset();
+        status.className='form-status ok';
+        status.textContent='Merci ! Votre demande a été envoyée. Nous vous répondrons dès que possible — en grec, anglais ou français.';
+      }else{
+        throw new Error(data.message||'fail');
+      }
+    }catch(err){
+      status.className='form-status err';
+      status.innerHTML='Désolé, l\'envoi a échoué. Réessayez ou contactez-nous directement via <a href="https://wa.me/306936666109">WhatsApp</a> ou <a href="mailto:pxrissafidis@gmail.com">email</a>.';
+    }finally{
+      btn.disabled=false; btn.textContent=btnText;
+    }
+  });
+})();
 </script>
 </body>
 </html>
