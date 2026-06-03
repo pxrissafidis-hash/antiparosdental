@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Η ιστορία μας — Antiparos Dental</title>
+<meta name="description" content="Δύο γενιές οδοντιάτρων στην Αντίπαρο. Ο Χρήστος και ο Παύλος Χρυσαφίδης — επιστημονική κατάρτιση, εμπειρία και αφοσίωση στη φροντίδα.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/theme.css">
+<style>
+.page-hero{padding:140px 0 0}
+.page-hero h1{font-size:clamp(2.6rem,6vw,5rem);color:var(--c-sea-deep);max-width:15ch}
+.page-hero .lead{font-size:clamp(1.05rem,1.5vw,1.25rem);color:var(--c-ink);max-width:56ch;margin-top:1.4rem}
+
+/* ΟΙΚΟΓΕΝΕΙΑΚΗ ΦΩΤΟ + ΑΦΗΓΗΣΗ */
+.origin{padding:clamp(4rem,8vw,7rem) 0}
+.origin-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,5rem);align-items:center}
+.origin-photo{aspect-ratio:4/5;background:linear-gradient(135deg,#c8b89a,#3d7a98);border-radius:var(--r);position:relative;overflow:hidden}
+.origin-photo span{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.92);font-family:var(--font-display);font-style:italic;text-align:center;padding:2rem}
+.origin h2{font-size:clamp(1.9rem,4vw,3rem);color:var(--c-sea-deep);margin-bottom:1.2rem;max-width:16ch}
+.origin p{color:var(--c-ink-soft);margin-bottom:1rem;max-width:50ch}
+
+/* ΓΙΑΤΡΟΙ */
+.team{background:var(--c-bg-alt)}
+.doc{display:grid;grid-template-columns:300px 1fr;gap:clamp(1.5rem,4vw,3.5rem);align-items:start;margin-bottom:3rem}
+.doc:last-child{margin-bottom:0}
+.doc-photo{aspect-ratio:3/4;background:linear-gradient(160deg,#9fb6bd,#1e5a78);border-radius:var(--r);position:relative;overflow:hidden}
+.doc-photo span{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.85);font-family:var(--font-display);font-style:italic;text-align:center;padding:1.5rem;font-size:.9rem}
+.doc-info h3{font-family:var(--font-display);font-size:2rem;color:var(--c-sea-deep);margin-bottom:.3rem}
+.doc-info .creds{font-size:.9rem;color:var(--c-sea);letter-spacing:.02em;margin-bottom:1.2rem;line-height:1.7}
+.doc-info p{color:var(--c-ink-soft);margin-bottom:1rem;max-width:56ch}
+.doc-info .tagline{font-family:var(--font-display);font-style:italic;font-size:1.2rem;color:var(--c-ink)}
+
+/* ΦΙΛΟΣΟΦΙΑ */
+.values{padding:clamp(4rem,8vw,7rem) 0}
+.values-head{max-width:40ch;margin-bottom:3rem}
+.values-head h2{font-size:clamp(1.8rem,3.5vw,2.8rem);color:var(--c-sea-deep)}
+.v-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.vcard{background:var(--c-sea-mist);padding:2rem 1.8rem;border-radius:var(--r);border-top:2px solid var(--c-sea)}
+.vcard h4{font-family:var(--font-display);font-size:1.4rem;color:var(--c-sea-deep);margin-bottom:.5rem}
+.vcard p{font-size:.9rem;color:var(--c-ink-soft)}
+
+.cta-band{background:var(--c-sea-deep);color:var(--c-bg)}
+.cta-band .wrap{padding-top:clamp(3rem,6vw,5rem);padding-bottom:clamp(3rem,6vw,5rem);text-align:center}
+.cta-band h2{color:#fff;font-size:clamp(1.8rem,3.5vw,2.8rem);max-width:22ch;margin:0 auto}
+.cta-band p{color:rgba(238,243,244,.8);max-width:48ch;margin:1rem auto 0}
+.cta-band .btn{margin-top:2rem}
+
+@media(max-width:860px){
+  .origin-grid{grid-template-columns:1fr}
+  .origin-photo{aspect-ratio:4/3}
+  .doc{grid-template-columns:1fr}
+  .doc-photo{aspect-ratio:4/3;max-width:320px}
+  .v-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<header id="hdr">
+  <nav>
+    <a class="brand" href="index.html">Antiparos Dental<small>Aesthetics</small></a>
+    <div class="nav-links">
+      <a href="index.html#services">Υπηρεσίες</a>
+      <a href="about.html">Η ιστορία μας</a>
+      <a href="international.html">Διεθνείς ασθενείς</a>
+      <a href="index.html#contact">Επικοινωνία</a>
+    </div>
+    <div class="lang">
+      <button class="active">ΕΛ</button><button>EN</button><button>FR</button>
+    </div>
+  </nav>
+</header>
+
+<div class="page-hero wrap">
+  <div class="crumb"><a href="index.html">Αρχική</a> · Η ιστορία μας</div>
+  <p class="eyebrow">Η ιστορία μας</p>
+  <h1>Δύο γενιές, ένα νησί, μία φιλοσοφία.</h1>
+  <p class="lead">Η Antiparos Dental δεν είναι απλώς ένα οδοντιατρείο. Είναι η συνέχεια μιας οικογενειακής αφοσίωσης στη φροντίδα — από πατέρα σε γιο, με ρίζες στο ίδιο νησί που αγαπάμε.</p>
+</div>
+
+<!-- ΟΙΚΟΓΕΝΕΙΑΚΗ ΑΦΗΓΗΣΗ -->
+<section class="wrap origin">
+  <div class="origin-grid">
+    <div class="origin-photo"><span>[ Οικογενειακή φωτογραφία: πατέρας &amp; γιος σε παραλία της Αντιπάρου, από τα παιδικά χρόνια — προς ένταξη ]</span></div>
+    <div>
+      <h2>Από μια παραλία της Αντιπάρου</h2>
+      <p>Κάθε ιστορία έχει μια αρχή. Η δική μας ξεκινά σε μια παραλία του νησιού, χρόνια πριν — ένας πατέρας κι ένας μικρός γιος που, χωρίς να το ξέρει ακόμη, θα ακολουθούσε τα ίδια βήματα.</p>
+      <p>Σήμερα, ο ίδιος δεσμός με το νησί και την οδοντιατρική ενώνει δύο γενιές κάτω από την ίδια στέγη. Ο πατέρας μετέφερε τη γνώση και την εμπειρία· ο γιος την εμπλούτισε με νέες τεχνικές και διεθνή κατάρτιση.</p>
+      <p>Αυτή η συνέχεια είναι η καρδιά της κλινικής μας — και ο λόγος που κάθε ασθενής μάς εμπιστεύεται όχι έναν, αλλά δύο γιατρούς που νοιάζονται.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ΓΙΑΤΡΟΙ -->
+<section class="team">
+  <div class="wrap">
+    <p class="eyebrow">Οι γιατροί μας</p>
+
+    <div class="doc">
+      <div class="doc-photo"><span>[ Φωτογραφία: Χρήστος Χρυσαφίδης — προς ένταξη ]</span></div>
+      <div class="doc-info">
+        <h3>Χρήστος Χρυσαφίδης</h3>
+        <div class="creds">DDS<br>Επιστημονικός Συνεργάτης Πανεπιστημίου Αθηνών</div>
+        <p>Με σχεδόν 40 χρόνια κλινικής εμπειρίας, ο Χρήστος Χρυσαφίδης έχει αφιερώσει τη σταδιοδρομία του στην οδοντιατρική φροντίδα και στη μετάδοση της γνώσης ως Επιστημονικός Συνεργάτης του Πανεπιστημίου Αθηνών.</p>
+        <p class="tagline">«Η εμπιστοσύνη του ασθενή χτίζεται με συνέπεια, χρόνο και ειλικρίνεια.»</p>
+      </div>
+    </div>
+
+    <div class="doc">
+      <div class="doc-photo"><span>[ Φωτογραφία: Παύλος Χρυσαφίδης — προς ένταξη ]</span></div>
+      <div class="doc-info">
+        <h3>Παύλος Χρυσαφίδης</h3>
+        <div class="creds">DDS, MSc<br>Υποψήφιος Διδάκτωρ ΕΚΠΑ · Μέλος ITI (International Team for Implantology)<br>Εμπειρία σε Αθήνα, Παρίσι και Ορλεάνη</div>
+        <p>Ο Παύλος Χρυσαφίδης συνδυάζει την ακαδημαϊκή έρευνα με τη σύγχρονη κλινική πράξη. Με μεταπτυχιακές σπουδές, εν εξελίξει διδακτορική έρευνα και διεθνή εμπειρία σε Αθήνα, Παρίσι και Ορλεάνη, εστιάζει στην εμφυτευματολογία και τη χειρουργική στόματος.</p>
+        <p class="tagline">«Η σύγχρονη επιστήμη στην υπηρεσία ενός φυσικού, διαρκούς αποτελέσματος.»</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ΑΞΙΕΣ -->
+<section class="wrap values">
+  <div class="values-head">
+    <p class="eyebrow">Η φιλοσοφία μας</p>
+    <h2>Αυτό που μας καθοδηγεί</h2>
+  </div>
+  <div class="v-grid">
+    <div class="vcard"><h4>Ειλικρίνεια</h4><p>Σας εξηγούμε με σαφήνεια τις επιλογές σας — τι χρειάζεται, τι όχι, και τι να περιμένετε ρεαλιστικά.</p></div>
+    <div class="vcard"><h4>Επιστήμη</h4><p>Συνεχής εκπαίδευση και τεκμηριωμένη πρακτική, ώστε να λαμβάνετε φροντίδα σύμφωνη με τα διεθνή πρότυπα.</p></div>
+    <div class="vcard"><h4>Ανθρωπιά</h4><p>Πίσω από κάθε θεραπεία υπάρχει ένας άνθρωπος. Σας αντιμετωπίζουμε με τον χρόνο και τον σεβασμό που αξίζετε.</p></div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="wrap">
+    <h2>Θα χαρούμε να σας γνωρίσουμε.</h2>
+    <p>Επικοινωνήστε μαζί μας για ένα ραντεβού ή για οποιαδήποτε απορία.</p>
+    <a class="btn btn-ghost-light" href="index.html#contact">Επικοινωνία →</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-grid">
+    <div>
+      <h4>Antiparos Dental</h4>
+      <p>Main road, Antiparos island<br>Αντίπαρος 840 07, Κυκλάδες, Ελλάδα</p>
+    </div>
+    <div>
+      <h4>Επικοινωνία</h4>
+      <p>
+        <a href="https://wa.me/306936666109">WhatsApp</a><br>
+        Παύλος Χρυσαφίδης<br><a href="tel:+306936666109">693 666 6109</a><br>
+        Χρήστος Χρυσαφίδης<br><a href="tel:+306936920038">693 692 0038</a><br>
+        <a href="mailto:pxrissafidis@gmail.com">pxrissafidis@gmail.com</a>
+      </p>
+    </div>
+    <div>
+      <h4>Ωράριο</h4>
+      <p>Δευτέρα–Κυριακή<br>09:00–13:00 &amp; 17:00–21:00<br><a href="emergency.html" style="font-size:.8rem">Επείγον εκτός ωραρίου;</a></p>
+    </div>
+  </div>
+  <div class="wrap foot-bottom">
+    <span>© 2026 Antiparos Dental</span>
+    <span>Με σεβασμό στο ιατρικό απόρρητο</span>
+  </div>
+</footer>
+
+<div class="float">
+  <a class="fab fab-emergency" href="emergency.html"><b>Επείγον;</b></a>
+  <a class="fab fab-wa" href="https://wa.me/306936666109">WhatsApp</a>
+</div>
+
+<script>
+const hdr=document.getElementById('hdr');
+addEventListener('scroll',()=>hdr.classList.toggle('scrolled',scrollY>20));
+</script>
+</body>
+</html>
