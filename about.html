@@ -31,8 +31,9 @@
 .team{background:var(--c-bg-alt)}
 .doc{display:grid;grid-template-columns:300px 1fr;gap:clamp(1.5rem,4vw,3.5rem);align-items:start;margin-bottom:3rem}
 .doc:last-child{margin-bottom:0}
-.doc-photo{aspect-ratio:3/4;background:linear-gradient(160deg,#9fb6bd,#1e5a78);border-radius:var(--r);position:relative;overflow:hidden}
+.doc-photo{aspect-ratio:1/1;background:linear-gradient(160deg,#9fb6bd,#1e5a78);border-radius:var(--r);position:relative;overflow:hidden}
 .doc-photo span{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.85);font-family:var(--font-display);font-style:italic;text-align:center;padding:1.5rem;font-size:.9rem}
+.doc-photo--pavlos{background:url('img/pavlos-clinic.jpg') center 60%/cover no-repeat}
 .doc-info h3{font-family:var(--font-display);font-size:2rem;color:var(--c-sea-deep);margin-bottom:.3rem}
 .doc-info .creds{font-size:.9rem;color:var(--c-sea);letter-spacing:.02em;margin-bottom:1.2rem;line-height:1.7}
 .doc-info p{color:var(--c-ink-soft);margin-bottom:1rem;max-width:56ch}
@@ -57,7 +58,7 @@
   .origin-grid{grid-template-columns:1fr}
   .origin-photo{aspect-ratio:4/3}
   .doc{grid-template-columns:1fr}
-  .doc-photo{aspect-ratio:4/3;max-width:320px}
+  .doc-photo{aspect-ratio:1/1;max-width:360px}
   .v-grid{grid-template-columns:1fr}
 }
 </style>
@@ -113,7 +114,7 @@
     </div>
 
     <div class="doc">
-      <div class="doc-photo"><span>[ Φωτογραφία: Παύλος Χρυσαφίδης — προς ένταξη ]</span></div>
+      <div class="doc-photo doc-photo--pavlos" role="img" aria-label="Παύλος Χρυσαφίδης στο οδοντιατρείο"></div>
       <div class="doc-info">
         <h3>Παύλος Χρυσαφίδης</h3>
         <div class="creds">DDS, MSc<br>Υποψήφιος Διδάκτωρ ΕΚΠΑ · Μέλος ITI (International Team for Implantology)<br>Εμπειρία σε Αθήνα, Παρίσι και Ορλεάνη</div>
@@ -157,7 +158,7 @@
         <a href="https://wa.me/306936666109">WhatsApp</a><br>
         Παύλος Χρυσαφίδης<br><a href="tel:+306936666109">693 666 6109</a><br>
         Χρήστος Χρυσαφίδης<br><a href="tel:+306936920038">693 692 0038</a><br>
-        <a href="mailto:pxrissafidis@gmail.com">pxrissafidis@gmail.com</a>
+        <a href="mailto:info@antiparosdental.com">info@antiparosdental.com</a>
       </p>
     </div>
     <div>
@@ -179,6 +180,12 @@
 <script>
 const hdr=document.getElementById('hdr');
 addEventListener('scroll',()=>hdr.classList.toggle('scrolled',scrollY>20));
+
+/* Προστασία εικόνων: αποτροπή δεξιού-κλικ/long-press μόνο πάνω στις φωτό.
+   Δεν εμποδίζει screenshot — είναι αποτρεπτικό, όχι αδιαπέραστο. */
+document.querySelectorAll('.origin-photo,.doc-photo').forEach(el=>{
+  el.addEventListener('contextmenu',e=>e.preventDefault());
+});
 </script>
 </body>
 </html>
