@@ -32,6 +32,7 @@
 .stay{background:var(--c-bg-alt)}
 .stay-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4rem);align-items:center}
 .stay-photo{aspect-ratio:4/3;background:linear-gradient(135deg,#9fb6bd,#3d7a98);border-radius:var(--r);position:relative;overflow:hidden}
+.stay-photo--img{background:url('../img/stay-littlebee.jpg') center/cover no-repeat}
 .stay-photo span{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.9);font-family:var(--font-display);font-style:italic;text-align:center;padding:2rem}
 .stay h2{font-size:clamp(1.8rem,3.5vw,2.6rem);color:var(--c-sea-deep);margin-bottom:1.1rem}
 .stay p{color:var(--c-ink-soft);margin-bottom:1rem;max-width:50ch}
@@ -105,7 +106,7 @@
 
 <section class="stay">
   <div class="wrap stay-grid">
-    <div class="stay-photo"><span>[ Photo : "Little Bee" / vue sur l'Égée — à ajouter ]</span></div>
+    <div class="stay-photo stay-photo--img" role="img" aria-label="Hébergement Little Bee avec vue sur l'Égée, Antiparos"></div>
     <div>
       <p class="eyebrow">Séjourner sur l'île</p>
       <h2>Un refuge paisible avec vue sur l'Égée</h2>
@@ -150,7 +151,7 @@
       <h3>Vous préférez nous joindre directement ?</h3>
       <p>Vous n'avez pas besoin de remplir le formulaire. Contactez-nous comme vous voulez — nous répondons en grec, anglais et français.</p>
       <a class="fb-wa" href="https://wa.me/306936666109?text=Bonjour,%20je%20suis%20un%20patient%20international%20intéressé%20par%20un%20traitement.">WhatsApp</a>
-      <a class="fb-mail" href="mailto:pxrissafidis@gmail.com">pxrissafidis@gmail.com</a>
+      <a class="fb-mail" href="mailto:info@antiparosdental.com">info@antiparosdental.com</a>
     </div>
   </div>
 </section>
@@ -176,7 +177,7 @@
         <a href="https://wa.me/306936666109">WhatsApp</a><br>
         Pavlos Chrysafidis<br><a href="tel:+306936666109">+30 693 666 6109</a><br>
         Christos Chrysafidis<br><a href="tel:+306936920038">+30 693 692 0038</a><br>
-        <a href="mailto:pxrissafidis@gmail.com">pxrissafidis@gmail.com</a>
+        <a href="mailto:info@antiparosdental.com">info@antiparosdental.com</a>
       </p>
     </div>
     <div>
@@ -222,7 +223,7 @@ addEventListener('scroll',()=>hdr.classList.toggle('scrolled',scrollY>20));
       }
     }catch(err){
       status.className='form-status err';
-      status.innerHTML='Désolé, l\'envoi a échoué. Réessayez ou contactez-nous directement via <a href="https://wa.me/306936666109">WhatsApp</a> ou <a href="mailto:pxrissafidis@gmail.com">email</a>.';
+      status.innerHTML='Désolé, l\'envoi a échoué. Réessayez ou contactez-nous directement via <a href="https://wa.me/306936666109">WhatsApp</a> ou <a href="mailto:info@antiparosdental.com">email</a>.';
     }finally{
       btn.disabled=false; btn.textContent=btnText;
     }

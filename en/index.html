@@ -40,7 +40,7 @@
 </script>
 <style>
 .hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;padding-top:var(--nav-h)}
-.hero-bg{position:absolute;inset:0;z-index:-2;background:url('../img/antiparos-hero.jpg') center/cover no-repeat,linear-gradient(180deg,#bcd6e1,#3d7a98)}
+.hero-bg{position:absolute;inset:0;z-index:-2;background:url('../img/clinic-exterior.jpg') center 42%/cover no-repeat,linear-gradient(180deg,#bcd6e1,#3d7a98)}
 .hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,rgba(238,243,244,.92) 0%,rgba(238,243,244,.78) 32%,rgba(238,243,244,.38) 56%,rgba(238,243,244,0) 88%)}
 .hero-fade{position:absolute;left:0;right:0;bottom:0;height:36%;z-index:-1;background:linear-gradient(180deg,transparent,var(--c-bg))}
 .hero-inner{max-width:var(--maxw);margin:0 auto;width:100%;padding-left:var(--pad);padding-right:var(--pad)}
@@ -62,15 +62,14 @@
 .story-photo span{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.9);font-family:var(--font-display);font-style:italic;text-align:center;padding:2rem}
 .story h2{font-size:clamp(2rem,4vw,3rem);margin-bottom:1.3rem;color:var(--c-sea-deep)}
 .story p{color:var(--c-ink-soft);margin-bottom:1rem;max-width:48ch}
-.intl{background:var(--c-sea-deep);color:var(--c-bg)}
+.intl{position:relative;background:url('../img/antiparos-hero.jpg') center/cover no-repeat;color:var(--c-bg);overflow:hidden}
+.intl::before{content:"";position:absolute;inset:0;background:linear-gradient(120deg,rgba(19,60,82,.92),rgba(19,60,82,.72));z-index:0}
+.intl .wrap{position:relative;z-index:1}
 .intl .eyebrow{color:var(--c-sea-light)}
 .intl h2{color:var(--c-white);font-size:clamp(2rem,4.5vw,3.4rem);max-width:20ch}
 .intl p{color:rgba(238,243,244,.8);max-width:52ch;margin-top:1.2rem}
 .intl .btn{margin-top:2.2rem}
 @media(max-width:860px){.grid{grid-template-columns:1fr}.story-grid{grid-template-columns:1fr}.story-photo{aspect-ratio:4/3}}
-.clinic-band{margin:clamp(2.5rem,5vw,4rem) auto 0;text-align:center;max-width:640px}
-.clinic-band-img{width:100%;height:clamp(180px,26vw,300px);background:url('../img/clinic-exterior.jpg') center 40%/cover no-repeat;border-radius:var(--r)}
-.clinic-band figcaption{margin-top:.9rem;font-family:var(--font-display);font-style:italic;color:var(--c-ink-soft);font-size:.98rem}
 </style>
 </head>
 <body>
@@ -131,12 +130,6 @@
       <a class="btn btn-ghost" href="about.html" data-i18n="story_cta" style="margin-top:1.5rem">Meet us</a>
     </div>
   </div>
-  <div class="wrap">
-    <figure class="clinic-band">
-      <div class="clinic-band-img" role="img" aria-label="Antiparos Dental clinic in Antiparos"></div>
-      <figcaption>Our clinic in Antiparos — where the same care continues, today.</figcaption>
-    </figure>
-  </div>
 </section>
 
 <section id="intl" class="intl">
@@ -187,7 +180,7 @@ const hdr=document.getElementById('hdr');
 addEventListener('scroll',()=>hdr.classList.toggle('scrolled',scrollY>20));
 
 /* Image protection: block right-click/long-press on photos only. */
-document.querySelectorAll('.story-photo,.clinic-band-img,.hero-bg').forEach(el=>{el.addEventListener('contextmenu',e=>e.preventDefault());});
+document.querySelectorAll('.story-photo,.hero-bg').forEach(el=>{el.addEventListener('contextmenu',e=>e.preventDefault());});
 
 </script>
 </body>
