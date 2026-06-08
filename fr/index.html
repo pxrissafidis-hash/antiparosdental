@@ -68,7 +68,9 @@
 .intl p{color:rgba(238,243,244,.8);max-width:52ch;margin-top:1.2rem}
 .intl .btn{margin-top:2.2rem}
 @media(max-width:860px){.grid{grid-template-columns:1fr}.story-grid{grid-template-columns:1fr}.story-photo{aspect-ratio:4/3}}
-.clinic-shot{width:100%;height:clamp(280px,46vw,560px);background:url('../img/clinic-exterior.jpg') center 38%/cover no-repeat}
+.clinic-band{margin:clamp(2.5rem,5vw,4rem) auto 0;text-align:center;max-width:640px}
+.clinic-band-img{width:100%;height:clamp(180px,26vw,300px);background:url('../img/clinic-exterior.jpg') center 40%/cover no-repeat;border-radius:var(--r)}
+.clinic-band figcaption{margin-top:.9rem;font-family:var(--font-display);font-style:italic;color:var(--c-ink-soft);font-size:.98rem}
 </style>
 </head>
 <body>
@@ -103,8 +105,6 @@
   </div>
 </section>
 
-<section class="clinic-shot" role="img" aria-label="La clinique Antiparos Dental à Antiparos"></section>
-
 <section id="services" class="wrap">
   <div class="section-head">
     <p class="eyebrow" data-i18n="svc_eyebrow">Soins</p>
@@ -116,7 +116,7 @@
     <a class="card" href="periodontology.html"><div><span class="num">03</span><h3 data-i18n="s3">Parodontologie</h3><p data-i18n="s3d">Prévention et traitement des gencives.</p></div><span class="go" data-i18n="more">En savoir plus →</span></a>
     <a class="card" href="oral-surgery.html"><div><span class="num">04</span><h3 data-i18n="s4">Chirurgie orale</h3><p data-i18n="s4d">Extraction des dents de sagesse, en toute sécurité.</p></div><span class="go" data-i18n="more">En savoir plus →</span></a>
     <a class="card" href="implants.html"><div><span class="num">05</span><h3 data-i18n="s5">Implants</h3><p data-i18n="s5d">Restauration dentaire — certifié ITI.</p></div><span class="go" data-i18n="more">En savoir plus →</span></a>
-    <a class="card" href="aligners.html"><div><span class="num">06</span><h3 data-i18n="s6">Orthodontie invisible</h3><p data-i18n="s6d">Gouttières transparentes, avec notre orthodontiste partenaire à Paros.</p></div><span class="go" data-i18n="more">En savoir plus →</span></a>
+    <a class="card" href="aligners.html"><div><span class="num">06</span><h3 data-i18n="s6">Orthodontie invisible</h3><p data-i18n="s6d">Gouttières transparentes, orthodontie pour enfants et adultes — avec notre orthodontiste partenaire.</p></div><span class="go" data-i18n="more">En savoir plus →</span></a>
   </div>
 </section>
 
@@ -130,6 +130,12 @@
       <p data-i18n="story_p2">Le même dévouement, d'une plage d'enfance à la clinique d'aujourd'hui.</p>
       <a class="btn btn-ghost" href="about.html" data-i18n="story_cta" style="margin-top:1.5rem">Faites notre connaissance</a>
     </div>
+  </div>
+  <div class="wrap">
+    <figure class="clinic-band">
+      <div class="clinic-band-img" role="img" aria-label="La clinique Antiparos Dental à Antiparos"></div>
+      <figcaption>Notre cabinet à Antiparos — là où les mêmes soins se poursuivent, aujourd'hui.</figcaption>
+    </figure>
   </div>
 </section>
 
@@ -181,7 +187,7 @@ const hdr=document.getElementById('hdr');
 addEventListener('scroll',()=>hdr.classList.toggle('scrolled',scrollY>20));
 
 /* Image protection: block right-click/long-press on photos only. */
-document.querySelectorAll('.story-photo,.clinic-shot,.hero-bg').forEach(el=>{el.addEventListener('contextmenu',e=>e.preventDefault());});
+document.querySelectorAll('.story-photo,.clinic-band-img,.hero-bg').forEach(el=>{el.addEventListener('contextmenu',e=>e.preventDefault());});
 
 </script>
 </body>

@@ -19,6 +19,7 @@
 .page-hero h1{font-size:clamp(2.6rem,6vw,5rem);color:var(--c-sea-deep);max-width:16ch}
 .page-hero .lead{font-size:clamp(1.05rem,1.5vw,1.25rem);color:var(--c-ink);max-width:54ch;margin-top:1.4rem}
 .hero-img{margin-top:3rem;aspect-ratio:21/9;background:linear-gradient(120deg,#7fb0c8,#3d7a98 60%,#1e5a78);border-radius:var(--r);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.9);font-family:var(--font-display);font-style:italic}
+.hero-img--photo{background:url('../img/aesthetic-hero.jpg') center 45%/cover no-repeat}
 .lead-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:clamp(2rem,5vw,5rem);align-items:start}
 .lead-grid h2{font-size:clamp(1.8rem,3.5vw,2.8rem);margin-bottom:1.2rem;max-width:18ch;color:var(--c-sea-deep)}
 .lead-grid p{color:var(--c-ink-soft);margin-bottom:1rem;max-width:50ch}
@@ -32,6 +33,12 @@
 .tcard p{font-size:.88rem;color:var(--c-ink-soft)}
 .philosophy h2{font-size:clamp(1.8rem,3.5vw,2.6rem);color:var(--c-sea-deep);max-width:22ch;margin-bottom:1.2rem}
 .philosophy p{color:var(--c-ink-soft);max-width:58ch;margin-bottom:1rem}
+.whitening{background:var(--c-sea-mist)}
+.whitening-inner{padding:clamp(3rem,6vw,5rem) 0;text-align:center}
+.whitening-text{max-width:40ch;margin:0 auto}
+.whitening h2{font-size:clamp(1.9rem,3.8vw,2.9rem);color:var(--c-sea-deep);margin-bottom:1.1rem}
+.whitening p{color:var(--c-ink-soft);margin-bottom:1.8rem}
+.whitening-cta{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
 .intl-cta{background:var(--c-sea-deep);color:var(--c-bg)}
 .intl-cta .wrap{padding-top:clamp(3rem,6vw,5rem);padding-bottom:clamp(3rem,6vw,5rem)}
 .intl-cta .eyebrow{color:var(--c-sea-light)}
@@ -62,7 +69,7 @@
   <p class="eyebrow">Dentisterie esthétique</p>
   <h1>Un sourire qui semble naturellement le vôtre.</h1>
   <p class="lead">La dentisterie esthétique ne se résume pas à des dents blanches — c'est l'harmonie avec votre visage. Notre objectif : des résultats discrets et naturels, qui vous font sourire en confiance.</p>
-  <div class="hero-img">[ Photo : cabinet / avant-après — à ajouter ]</div>
+  <div class="hero-img hero-img--photo" role="img" aria-label="Dentisterie esthétique — application sur les dents"></div>
 </div>
 
 <section class="wrap">
@@ -104,6 +111,20 @@
   </div>
 </section>
 
+<section class="whitening">
+  <div class="wrap whitening-inner">
+    <div class="whitening-text">
+      <p class="eyebrow">Blanchiment des dents</p>
+      <h2>Un sourire éclatant, pendant votre séjour sur l'île.</h2>
+      <p>Juste avant ou pendant vos vacances à Antiparos : un blanchiment discret et contrôlé qui donne de l'éclat à votre sourire — prêt pour les souvenirs et les photos de l'été. Demandez-nous comment.</p>
+      <div class="whitening-cta">
+        <a class="btn btn-primary" href="../index.html#contact">Prendre rendez-vous</a>
+        <a class="btn btn-ghost" href="https://wa.me/306936666109">WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="intl-cta">
   <div class="wrap">
     <p class="eyebrow">Vous venez de l'étranger ?</p>
@@ -123,9 +144,9 @@
       <h4>Contact</h4>
       <p>
         <a href="https://wa.me/306936666109">WhatsApp</a><br>
-        Dr Pavlos Chrysafidis<br><a href="tel:+306936666109">+30 693 666 6109</a><br>
-        Dr Christos Chrysafidis<br><a href="tel:+306936920038">+30 693 692 0038</a><br>
-        <a href="mailto:pxrissafidis@gmail.com">pxrissafidis@gmail.com</a>
+        Pavlos Chrysafidis<br><a href="tel:+306936666109">+30 693 666 6109</a><br>
+        Christos Chrysafidis<br><a href="tel:+306936920038">+30 693 692 0038</a><br>
+        <a href="mailto:info@antiparosdental.com">info@antiparosdental.com</a>
       </p>
     </div>
     <div>
