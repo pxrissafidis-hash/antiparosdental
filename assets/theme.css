@@ -108,3 +108,10 @@ footer a:hover{color:var(--c-sea-light)}
   .nav-links{display:none}
   .foot-grid{grid-template-columns:1fr;gap:2rem}
 }
+
+/* ---- PROTECTED IMAGES (no drag / no save / no select) ---- */
+/* Εφαρμόζεται σε όλες τις φωτό-περιοχές. Αλλάζει από ένα σημείο. */
+.story-photo,.origin-photo,.doc-photo,.clinic-shot,.hero-bg{
+  -webkit-user-select:none;user-select:none;-webkit-user-drag:none;
+  -webkit-touch-callout:none;pointer-events:auto;
+}
