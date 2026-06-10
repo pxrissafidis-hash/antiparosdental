@@ -41,6 +41,11 @@
 .doc-info .tagline{font-family:var(--font-display);font-style:italic;font-size:1.2rem;color:var(--c-ink)}
 
 /* ΦΙΛΟΣΟΦΙΑ */
+.space{padding:clamp(4rem,8vw,7rem) 0}
+.space-head{max-width:42ch;margin-bottom:2.5rem}
+.space-head h2{font-size:clamp(1.8rem,3.5vw,2.8rem);color:var(--c-sea-deep)}
+.space-head p{color:var(--c-ink-soft);margin-top:.8rem;max-width:52ch}
+.space-photo{aspect-ratio:3/2;background:url('../img/clinic-interior.jpg') center/cover no-repeat;border-radius:var(--r);overflow:hidden}
 .values{padding:clamp(4rem,8vw,7rem) 0}
 .values-head{max-width:40ch;margin-bottom:3rem}
 .values-head h2{font-size:clamp(1.8rem,3.5vw,2.8rem);color:var(--c-sea-deep)}
@@ -61,6 +66,7 @@
   .doc{grid-template-columns:1fr}
   .doc-photo{aspect-ratio:1/1;max-width:360px}
   .v-grid{grid-template-columns:1fr}
+  .space-photo{aspect-ratio:4/3}
 }
 </style>
 </head>
@@ -123,6 +129,16 @@
   </div>
 </section>
 
+<!-- THE CLINIC -->
+<section class="wrap space">
+  <div class="space-head">
+    <p class="eyebrow">Our space</p>
+    <h2>A calm, light-filled environment</h2>
+    <p>Natural light, modern equipment and the calm of the island — a space designed to make your visit as comfortable as possible.</p>
+  </div>
+  <div class="space-photo" role="img" aria-label="Interior of the Antiparos Dental clinic"></div>
+</section>
+
 <section class="wrap values">
   <div class="values-head">
     <p class="eyebrow">Our philosophy</p>
@@ -179,7 +195,7 @@ const hdr=document.getElementById('hdr');
 addEventListener('scroll',()=>hdr.classList.toggle('scrolled',scrollY>20));
 
 /* Image protection */
-document.querySelectorAll('.origin-photo,.doc-photo').forEach(el=>{el.addEventListener('contextmenu',e=>e.preventDefault());});
+document.querySelectorAll('.origin-photo,.doc-photo,.space-photo').forEach(el=>{el.addEventListener('contextmenu',e=>e.preventDefault());});
 </script>
 </body>
 </html>
