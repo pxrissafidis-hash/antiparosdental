@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Notre histoire — Deux générations de dentistes à Antiparos | Antiparos Dental</title>
+<meta name="description" content="L'histoire d'Antiparos Dental : deux générations de dentistes à Antiparos. Christos Chrysafidis (DDS) et Pavlos Chrysafidis (DDS, MSc, membre ITI).">
+<link rel="canonical" href="https://antiparosdental.com/fr/about.html">
+<link rel="alternate" hreflang="el" href="https://antiparosdental.com/about.html">
+<link rel="alternate" hreflang="en" href="https://antiparosdental.com/en/about.html">
+<link rel="alternate" hreflang="fr" href="https://antiparosdental.com/fr/about.html">
+<link rel="alternate" hreflang="x-default" href="https://antiparosdental.com/about.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/theme.css">
+<style>
+.page-hero{padding:140px 0 0}
+.page-hero h1{font-size:clamp(2.6rem,6vw,5rem);color:var(--c-sea-deep);max-width:15ch}
+.page-hero .lead{font-size:clamp(1.05rem,1.5vw,1.25rem);color:var(--c-ink);max-width:56ch;margin-top:1.4rem}
+
+/* ΟΙΚΟΓΕΝΕΙΑΚΗ ΦΩΤΟ + ΑΦΗΓΗΣΗ */
+.origin{padding:clamp(4rem,8vw,7rem) 0}
+.origin-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,5rem);align-items:center}
+.origin-photo{aspect-ratio:4/5;background:url('../img/family-beach.jpg') center/cover no-repeat;border-radius:var(--r);position:relative;overflow:hidden}
+.origin-photo span{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.92);font-family:var(--font-display);font-style:italic;text-align:center;padding:2rem}
+.origin h2{font-size:clamp(1.9rem,4vw,3rem);color:var(--c-sea-deep);margin-bottom:1.2rem;max-width:16ch}
+.origin p{color:var(--c-ink-soft);margin-bottom:1rem;max-width:50ch}
+
+/* ΓΙΑΤΡΟΙ */
+.team{background:var(--c-bg-alt)}
+.doc{display:grid;grid-template-columns:300px 1fr;gap:clamp(1.5rem,4vw,3.5rem);align-items:start;margin-bottom:3rem}
+.doc:last-child{margin-bottom:0}
+.doc-photo{aspect-ratio:1/1;background:linear-gradient(160deg,#9fb6bd,#1e5a78);border-radius:var(--r);position:relative;overflow:hidden}
+.doc-photo span{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.85);font-family:var(--font-display);font-style:italic;text-align:center;padding:1.5rem;font-size:.9rem}
+.doc-photo--pavlos{background:url('../img/pavlos-clinic.jpg') center 60%/cover no-repeat}
+.doc-photo--christos{background:url('../img/christos-clinic.jpg') 28% center/cover no-repeat}
+.doc-info h3{font-family:var(--font-display);font-size:2rem;color:var(--c-sea-deep);margin-bottom:.3rem}
+.doc-info .creds{font-size:.9rem;color:var(--c-sea);letter-spacing:.02em;margin-bottom:1.2rem;line-height:1.7}
+.doc-info p{color:var(--c-ink-soft);margin-bottom:1rem;max-width:56ch}
+.doc-info .tagline{font-family:var(--font-display);font-style:italic;font-size:1.2rem;color:var(--c-ink)}
+
+/* ΦΙΛΟΣΟΦΙΑ */
+.space{padding:clamp(4rem,8vw,7rem) 0}
+.space-head{max-width:42ch;margin-bottom:2.5rem}
+.space-head h2{font-size:clamp(1.8rem,3.5vw,2.8rem);color:var(--c-sea-deep)}
+.space-head p{color:var(--c-ink-soft);margin-top:.8rem;max-width:52ch}
+.space-photo{aspect-ratio:3/2;background:url('../img/clinic-interior.jpg') center/cover no-repeat;border-radius:var(--r);overflow:hidden}
+.values{padding:clamp(4rem,8vw,7rem) 0}
+.values-head{max-width:40ch;margin-bottom:3rem}
+.values-head h2{font-size:clamp(1.8rem,3.5vw,2.8rem);color:var(--c-sea-deep)}
+.v-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.vcard{background:var(--c-sea-mist);padding:2rem 1.8rem;border-radius:var(--r);border-top:2px solid var(--c-sea)}
+.vcard h4{font-family:var(--font-display);font-size:1.4rem;color:var(--c-sea-deep);margin-bottom:.5rem}
+.vcard p{font-size:.9rem;color:var(--c-ink-soft)}
+
+.cta-band{background:var(--c-sea-deep);color:var(--c-bg)}
+.cta-band .wrap{padding-top:clamp(3rem,6vw,5rem);padding-bottom:clamp(3rem,6vw,5rem);text-align:center}
+.cta-band h2{color:#fff;font-size:clamp(1.8rem,3.5vw,2.8rem);max-width:22ch;margin:0 auto}
+.cta-band p{color:rgba(238,243,244,.8);max-width:48ch;margin:1rem auto 0}
+.cta-band .btn{margin-top:2rem}
+
+@media(max-width:860px){
+  .origin-grid{grid-template-columns:1fr}
+  .origin-photo{aspect-ratio:4/3}
+  .doc{grid-template-columns:1fr}
+  .doc-photo{aspect-ratio:1/1;max-width:360px}
+  .v-grid{grid-template-columns:1fr}
+  .space-photo{aspect-ratio:4/3}
+}
+</style>
+</head>
+<body>
+<header id="hdr">
+  <nav>
+    <a class="brand" href="index.html">Antiparos Dental<small>Aesthetics</small></a>
+    <div class="nav-links">
+      <a href="index.html#services">Soins</a>
+      <a href="index.html#story">Notre histoire</a>
+      <a href="index.html#intl">International</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+    <div class="lang">
+      <button onclick="location.href='../about.html'">ΕΛ</button><button onclick="location.href='../en/about.html'">EN</button><button onclick="location.href='../fr/about.html'" class="active">FR</button>
+    </div>
+  </nav>
+</header>
+
+<div class="page-hero wrap">
+  <div class="crumb"><a href="index.html">Accueil</a> · Notre histoire</div>
+  <p class="eyebrow">Notre histoire</p>
+  <h1>Deux générations, une île, une philosophie.</h1>
+  <p class="lead">Antiparos Dental n'est pas qu'un cabinet dentaire. C'est la continuité d'un dévouement familial au soin — de père en fils, avec des racines sur l'île même que nous aimons.</p>
+</div>
+
+<section class="wrap origin">
+  <div class="origin-grid">
+    <div class="origin-photo"></div>
+    <div>
+      <h2>D'une plage d'Antiparos</h2>
+      <p>Chaque histoire a un début. La nôtre commence sur une plage de l'île, il y a des années — un père et un petit garçon qui, sans le savoir encore, suivrait le même chemin.</p>
+      <p>Aujourd'hui, le même lien avec l'île et avec la dentisterie unit deux générations sous le même toit. Le père a transmis le savoir et l'expérience ; le fils l'a enrichi de nouvelles techniques et d'une formation internationale.</p>
+      <p>Cette continuité est le cœur de notre cabinet — et la raison pour laquelle chaque patient fait confiance non pas à un, mais à deux médecins qui se soucient de lui.</p>
+    </div>
+  </div>
+</section>
+
+<section class="team">
+  <div class="wrap">
+    <p class="eyebrow">Nos médecins</p>
+    <div class="doc">
+      <div class="doc-photo doc-photo--christos" role="img" aria-label="Christos et Pavlos Chrysafidis au cabinet"></div>
+      <div class="doc-info">
+        <h3>Christos Chrysafidis</h3>
+        <div class="creds">DDS<br>Collaborateur scientifique, Université d'Athènes</div>
+        <p>Avec près de 40 ans d'expérience clinique, Christos Chrysafidis a consacré sa carrière aux soins dentaires et à la transmission du savoir en tant que collaborateur scientifique de l'Université d'Athènes.</p>
+        <p class="tagline">« La confiance d'un patient se construit avec constance, temps et honnêteté. »</p>
+      </div>
+    </div>
+    <div class="doc">
+      <div class="doc-photo doc-photo--pavlos" role="img" aria-label="Pavlos Chrysafidis au cabinet"></div>
+      <div class="doc-info">
+        <h3>Pavlos Chrysafidis</h3>
+        <div class="creds">DDS, MSc<br>Doctorant, Université d'Athènes · Membre de l'ITI (International Team for Implantology)<br>Expérience à Athènes, Paris et Orléans</div>
+        <p>Pavlos Chrysafidis associe la recherche académique à la pratique clinique moderne. Titulaire d'un master, avec une recherche doctorale en cours et une expérience internationale à Athènes, Paris et Orléans, il se concentre sur l'implantologie et la chirurgie orale.</p>
+        <p class="tagline">« La science moderne au service d'un résultat naturel et durable. »</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LE CABINET -->
+<section class="wrap space">
+  <div class="space-head">
+    <p class="eyebrow">Notre cabinet</p>
+    <h2>Un environnement calme et lumineux</h2>
+    <p>Lumière naturelle, équipement moderne et la sérénité de l'île — un espace pensé pour rendre votre visite aussi agréable que possible.</p>
+  </div>
+  <div class="space-photo" role="img" aria-label="Intérieur du cabinet Antiparos Dental"></div>
+</section>
+
+<section class="wrap values">
+  <div class="values-head">
+    <p class="eyebrow">Notre philosophie</p>
+    <h2>Ce qui nous guide</h2>
+  </div>
+  <div class="v-grid">
+    <div class="vcard"><h4>Honnêteté</h4><p>Nous expliquons clairement vos options — ce qui est nécessaire, ce qui ne l'est pas, et à quoi vous attendre de façon réaliste.</p></div>
+    <div class="vcard"><h4>Science</h4><p>Formation continue et pratique fondée sur les preuves, pour que vous receviez des soins conformes aux standards internationaux.</p></div>
+    <div class="vcard"><h4>Humanité</h4><p>Derrière chaque traitement, il y a une personne. Nous vous accordons le temps et le respect que vous méritez.</p></div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="wrap">
+    <h2>Nous serions heureux de vous rencontrer.</h2>
+    <p>Contactez-nous pour un rendez-vous ou pour toute question.</p>
+    <a class="btn btn-ghost-light" href="index.html#contact">Contact →</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-grid">
+    <div>
+      <h4>Antiparos Dental</h4>
+      <p>Main road, Antiparos island<br>Antiparos 840 07, Cyclades, Grèce</p>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p>
+        <a href="https://wa.me/306936666109">WhatsApp</a><br>
+        Pavlos Chrysafidis<br><a href="tel:+306936666109">+30 693 666 6109</a><br>
+        Christos Chrysafidis<br><a href="tel:+306936920038">+30 693 692 0038</a><br>
+        <a href="mailto:info@antiparosdental.com">info@antiparosdental.com</a>
+      </p>
+    </div>
+    <div>
+      <h4>Horaires</h4>
+      <p>Lundi–Dimanche<br>09h00–13h00 &amp; 17h00–21h00<br><a href="emergency.html" style="font-size:.8rem">Urgence hors horaires ?</a></p>
+    </div>
+  </div>
+  <div class="wrap foot-bottom">
+    <span>© 2026 Antiparos Dental</span>
+    <span>Dans le respect du secret médical</span>
+  </div>
+</footer>
+
+<div class="float">
+  <a class="fab fab-emergency" href="emergency.html"><b>Urgence ?</b></a>
+  <a class="fab fab-wa" href="https://wa.me/306936666109">WhatsApp</a>
+</div>
+
+<script>
+const hdr=document.getElementById('hdr');
+addEventListener('scroll',()=>hdr.classList.toggle('scrolled',scrollY>20));
+
+/* Image protection */
+document.querySelectorAll('.origin-photo,.doc-photo,.space-photo').forEach(el=>{el.addEventListener('contextmenu',e=>e.preventDefault());});
+</script>
+</body>
+</html>
