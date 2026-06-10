@@ -8,3 +8,4 @@ Static site. Hosted on GitHub Pages.
 - CNAME — custom domain (antiparosdental.com)
 
 To change colors site-wide, edit assets/theme.css :root variables.
+ .
