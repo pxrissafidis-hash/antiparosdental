@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Διεθνείς Ασθενείς — Οδοντίατρος Αντίπαρος & Πάρος | Antiparos Dental</title>
-<meta name="description" content="Οδοντιατρική φροντίδα στην Αντίπαρο και Πάρο για ασθενείς από το εξωτερικό. Εμφυτεύματα, αισθητική, χειρουργική στόματος — εξυπηρέτηση στα Ελληνικά, Αγγλικά και Γαλλικά.">
+<meta name="description" content="Οδοντιατρική φροντίδα στην Αντίπαρο για ασθενείς από το εξωτερικό. Εμφυτεύματα, αισθητική, χειρουργική στόματος — εξυπηρέτηση στα Ελληνικά, Αγγλικά και Γαλλικά.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -31,16 +31,6 @@
 .how-step h4{font-family:var(--font-display);font-size:1.2rem;margin:.6rem 0 .5rem;color:var(--c-ink)}
 .how-step p{font-size:.85rem;color:var(--c-ink-soft)}
 
-/* ΔΙΑΜΟΝΗ */
-.stay{background:var(--c-bg-alt)}
-.stay-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4rem);align-items:center}
-.stay-photo{aspect-ratio:4/3;background:linear-gradient(135deg,#9fb6bd,#3d7a98);border-radius:var(--r);position:relative;overflow:hidden}
-.stay-photo--img{background:url('img/stay-littlebee.jpg') center/cover no-repeat}
-.stay-photo span{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.9);font-family:var(--font-display);font-style:italic;text-align:center;padding:2rem}
-.stay h2{font-size:clamp(1.8rem,3.5vw,2.6rem);color:var(--c-sea-deep);margin-bottom:1.1rem}
-.stay p{color:var(--c-ink-soft);margin-bottom:1rem;max-width:50ch}
-.stay .fineprint{font-size:.8rem;font-style:italic;color:var(--c-ink-soft);max-width:50ch}
-
 /* ΦΟΡΜΑ + FALLBACK */
 .enquire{padding:clamp(4rem,8vw,7rem) 0}
 .enquire-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:clamp(2rem,5vw,4rem);align-items:start}
@@ -50,8 +40,7 @@
 .field input,.field select,.field textarea{width:100%;padding:.85rem 1rem;border:1px solid var(--c-line);border-radius:var(--r);background:var(--c-white);font-family:var(--font-body);font-size:.95rem;color:var(--c-ink);transition:border-color .2s}
 .field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--c-sea)}
 .field textarea{min-height:120px;resize:vertical}
-.check{display:flex;gap:.6rem;align-items:flex-start;margin-bottom:1.4rem;font-size:.9rem;color:var(--c-ink-soft)}
-.check input{width:auto;margin-top:.2rem}
+.privacy-note{font-size:.8rem;font-style:italic;color:var(--c-ink-soft);margin-bottom:1.4rem;max-width:50ch}
 .fallback{background:var(--c-sea-mist);padding:2rem;border-radius:var(--r);border:1px solid var(--c-line)}
 .fallback h3{font-family:var(--font-display);font-size:1.5rem;color:var(--c-sea-deep);margin-bottom:.8rem}
 .fallback p{font-size:.92rem;color:var(--c-ink-soft);margin-bottom:1.2rem}
@@ -74,7 +63,7 @@
 
 @media(max-width:860px){
   .how-row{grid-template-columns:1fr;border:none}
-  .stay-grid,.enquire-grid{grid-template-columns:1fr}
+  .enquire-grid{grid-template-columns:1fr}
 }
 </style>
 </head>
@@ -95,37 +84,23 @@
 
 <div class="page-hero wrap">
   <div class="crumb"><a href="index.html">Αρχική</a> · Διεθνείς ασθενείς</div>
-  <p class="eyebrow" data-i18n="i_eyebrow">Διεθνείς & γαλλόφωνοι ασθενείς</p>
-  <h1 data-i18n="i_h1">Είστε ήδη στο νησί; Φροντίστε το χαμόγελό σας εδώ.</h1>
-  <p class="lead" data-i18n="i_lead">Επισκέπτες και κάτοικοι της Αντιπάρου βρίσκουν κοντά τους σύγχρονη οδοντιατρική φροντίδα — από έμπειρους γιατρούς, σε γλώσσα που καταλαβαίνουν. Εξυπηρετούμε άνετα στα ελληνικά, αγγλικά και γαλλικά, για εμφυτεύματα, χειρουργική στόματος και αισθητική αποκατάσταση.</p>
+  <p class="eyebrow" data-i18n="i_eyebrow">Διεθνείς ασθενείς</p>
+  <h1 data-i18n="i_h1">Οδοντιατρική φροντίδα στην Αντίπαρο, για ασθενείς από το εξωτερικό.</h1>
+  <p class="lead" data-i18n="i_lead">Ταξιδεύετε για θεραπεία; Στέλνετε μας την απεικόνισή σας πριν έρθετε, και σας ενημερώνουμε αν η θεραπεία είναι εφικτή. Εξυπηρετούμε στα ελληνικά, αγγλικά και γαλλικά. Αν βρίσκεστε ήδη στο νησί, είμαστε κοντά σας.</p>
   <div class="hero-img hero-img--photo" role="img" aria-label="Γραφικό δρομάκι στην Αντίπαρο με μπουκαμβίλιες"></div>
 </div>
 
 <section class="wrap how">
   <div class="how-head">
     <p class="eyebrow" data-i18n="i_how_eyebrow">Πώς λειτουργεί</p>
-    <h2 data-i18n="i_how_h2">Είτε είστε ήδη εδώ, είτε σχεδιάζετε την επίσκεψή σας</h2>
-    <p>Πολλοί ασθενείς μάς βρίσκουν ενώ βρίσκονται ήδη στην Αντίπαρο ή την Πάρο για διακοπές. Άλλοι, ιδίως γαλλόφωνοι από τον Καναδά και την υπόλοιπη Ευρώπη, προτιμούν να συνδυάσουν τη φροντίδα τους με μια ήρεμη παραμονή στο νησί. Όποια κι αν είναι η περίπτωσή σας, κάνουμε τη διαδικασία ξεκάθαρη.</p>
+    <h2 data-i18n="i_how_h2">Από την πρώτη επαφή μέχρι την επίσκεψη</h2>
+    <p>Κάθε περίπτωση εξετάζεται ξεχωριστά. Η προκαταρκτική εκτίμηση δεν αντικαθιστά την εξέταση στο ιατρείο.</p>
   </div>
   <div class="how-row">
-    <div class="how-step"><div class="n">01</div><h4>Πρώτη επαφή</h4><p>Μας γράφετε με το αίτημά σας. Απαντάμε στα ελληνικά, αγγλικά ή γαλλικά.</p></div>
-    <div class="how-step"><div class="n">02</div><h4>Αξιολόγηση εξ αποστάσεως</h4><p>Με βάση όσα μας στέλνετε (π.χ. ακτινογραφίες), σας δίνουμε μια πρώτη εκτίμηση και πλάνο.</p></div>
+    <div class="how-step"><div class="n">01</div><h4>Πρώτη επαφή</h4><p>Γράψτε μας με το αίτημά σας. Απαντάμε στα ελληνικά, αγγλικά ή γαλλικά.</p></div>
+    <div class="how-step"><div class="n">02</div><h4>Προκαταρκτική αξιολόγηση</h4><p>Στέλνετε αξονική (CBCT) και φωτογραφίες του στόματος. Με βάση αυτά σας λέμε αν η θεραπεία είναι πιθανή. Η τελική κρίση γίνεται στο πρώτο ραντεβού.</p></div>
     <div class="how-step"><div class="n">03</div><h4>Σχεδιασμός επίσκεψης</h4><p>Οργανώνουμε τα ραντεβού σε όσο το δυνατόν λιγότερες επισκέψεις και σας ενημερώνουμε για χρόνο και κόστος.</p></div>
     <div class="how-step"><div class="n">04</div><h4>Θεραπεία & παρακολούθηση</h4><p>Ολοκληρώνουμε τη θεραπεία στο νησί και παραμένουμε διαθέσιμοι για follow-up.</p></div>
-  </div>
-</section>
-
-<!-- ΔΙΑΜΟΝΗ -->
-<section class="stay">
-  <div class="wrap stay-grid">
-    <div class="stay-photo stay-photo--img" role="img" aria-label="Διαμονή Little Bee με θέα στο Αιγαίο, Αντίπαρος"></div>
-    <div>
-      <p class="eyebrow" data-i18n="i_stay_eyebrow">Διαμονή στο νησί</p>
-      <h2 data-i18n="i_stay_h2">Ένα ήρεμο καταφύγιο με θέα στο Αιγαίο</h2>
-      <p>Για την παραμονή σας, μπορούμε να σας προτείνουμε διαμονή σε ένα γαλήνιο κυκλαδίτικο σπίτι στην Αντίπαρο, με εκπληκτική θέα στο γαλάζιο Αιγαίο και ηλιόλουστο αίθριο — ιδανικό για ξεκούραση πριν ή μετά τη θεραπεία.</p>
-      <p class="fineprint">Η διαμονή είναι προαιρετική και αποτελεί ξεχωριστή υπηρεσία, με δική της κράτηση μέσω Airbnb. Ευχαρίστως σας βοηθάμε με πληροφορίες και εναλλακτικές επιλογές ανάλογα με τις ανάγκες σας.</p>
-      <a class="btn btn-primary" href="https://www.airbnb.gr/rooms/1071099792835933027" style="margin-top:.6rem" target="_blank" rel="noopener">Δείτε τη διαμονή →</a>
-    </div>
   </div>
 </section>
 
@@ -170,7 +145,7 @@
           <label for="message">Το μήνυμά σας</label>
           <textarea id="message" name="message" placeholder="Περιγράψτε σύντομα τι χρειάζεστε. Μπορείτε να αναφέρετε και πιθανές ημερομηνίες."></textarea>
         </div>
-        <label class="check"><input type="checkbox" name="accommodation" value="ναι"> Με ενδιαφέρει βοήθεια με τη διαμονή στο νησί</label>
+        <p class="privacy-note">Μην στέλνετε ιατρικά αρχεία ή ιατρικό ιστορικό σε αυτή τη φόρμα. Μετά την πρώτη επαφή θα σας δώσουμε ασφαλή τρόπο αποστολής.</p>
         <button class="btn btn-primary" type="submit">Αποστολή αιτήματος</button>
         <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
       </form>
