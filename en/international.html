@@ -30,14 +30,6 @@
 .how-step .n{font-family:var(--font-display);font-style:italic;font-size:2rem;color:var(--c-sea)}
 .how-step h4{font-family:var(--font-display);font-size:1.2rem;margin:.6rem 0 .5rem;color:var(--c-ink)}
 .how-step p{font-size:.85rem;color:var(--c-ink-soft)}
-.stay{background:var(--c-bg-alt)}
-.stay-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4rem);align-items:center}
-.stay-photo{aspect-ratio:4/3;background:linear-gradient(135deg,#9fb6bd,#3d7a98);border-radius:var(--r);position:relative;overflow:hidden}
-.stay-photo--img{background:url('../img/stay-littlebee.jpg') center/cover no-repeat}
-.stay-photo span{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.9);font-family:var(--font-display);font-style:italic;text-align:center;padding:2rem}
-.stay h2{font-size:clamp(1.8rem,3.5vw,2.6rem);color:var(--c-sea-deep);margin-bottom:1.1rem}
-.stay p{color:var(--c-ink-soft);margin-bottom:1rem;max-width:50ch}
-.stay .fineprint{font-size:.8rem;font-style:italic;color:var(--c-ink-soft);max-width:50ch}
 .enquire{padding:clamp(4rem,8vw,7rem) 0}
 .enquire-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:clamp(2rem,5vw,4rem);align-items:start}
 .enquire h2{font-size:clamp(1.8rem,3.5vw,2.6rem);color:var(--c-sea-deep);margin-bottom:1rem}
@@ -46,8 +38,7 @@
 .field input,.field select,.field textarea{width:100%;padding:.85rem 1rem;border:1px solid var(--c-line);border-radius:var(--r);background:var(--c-white);font-family:var(--font-body);font-size:.95rem;color:var(--c-ink)}
 .field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--c-sea)}
 .field textarea{min-height:120px;resize:vertical}
-.check{display:flex;gap:.6rem;align-items:flex-start;margin-bottom:1.4rem;font-size:.9rem;color:var(--c-ink-soft)}
-.check input{width:auto;margin-top:.2rem}
+.privacy-note{font-size:.8rem;font-style:italic;color:var(--c-ink-soft);margin-bottom:1.4rem;max-width:50ch}
 .fallback{background:var(--c-sea-mist);padding:2rem;border-radius:var(--r);border:1px solid var(--c-line)}
 .fallback h3{font-family:var(--font-display);font-size:1.5rem;color:var(--c-sea-deep);margin-bottom:.8rem}
 .fallback p{font-size:.92rem;color:var(--c-ink-soft);margin-bottom:1.2rem}
@@ -61,7 +52,7 @@
 .map-sec{padding-bottom:0}
 .map-wrap{margin-top:2rem;border-radius:var(--r);overflow:hidden;border:1px solid var(--c-line)}
 .map-wrap iframe{width:100%;height:420px;border:0;display:block}
-@media(max-width:860px){.how-row{grid-template-columns:1fr;border:none}.stay-grid,.enquire-grid{grid-template-columns:1fr}}
+@media(max-width:860px){.how-row{grid-template-columns:1fr;border:none}.enquire-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -86,35 +77,22 @@
 <div class="page-hero wrap">
   <div class="crumb"><a href="index.html">Home</a> · International patients</div>
   <p class="eyebrow">International & French-speaking patients</p>
-  <h1>Already on the island? Care for your smile here.</h1>
-  <p class="lead">Visitors and residents of Antiparos and nearby Paros find modern dental care close by — from experienced dentists, in a language they understand. We work comfortably in Greek, English and French, for implants, oral surgery and aesthetic restoration.</p>
+  <h1>Dental care in Antiparos, for patients from abroad.</h1>
+  <p class="lead">Travelling for treatment? Send us your imaging before you come, and we will tell you whether treatment is feasible. We work comfortably in Greek, English and French. If you are already on the island, we are close by.</p>
   <div class="hero-img hero-img--photo" role="img" aria-label="Picturesque street in Antiparos with bougainvillea"></div>
 </div>
 
 <section class="wrap how">
   <div class="how-head">
     <p class="eyebrow">How it works</p>
-    <h2>Whether you are already here or planning your visit</h2>
-    <p>Many patients find us while already on Antiparos or Paros for their holidays. Others, especially French speakers from Canada and across Europe, choose to combine their care with a peaceful stay on the island. Whatever your case, we keep the process clear.</p>
+    <h2>From first contact to your visit</h2>
+    <p>Each case is assessed individually. The preliminary assessment does not replace an examination at the clinic.</p>
   </div>
   <div class="how-row">
     <div class="how-step"><div class="n">01</div><h4>First contact</h4><p>Write to us with your request. We reply in Greek, English or French.</p></div>
-    <div class="how-step"><div class="n">02</div><h4>Remote assessment</h4><p>Based on what you send us (e.g. X-rays), we give you an initial estimate and plan.</p></div>
+    <div class="how-step"><div class="n">02</div><h4>Preliminary assessment</h4><p>Send us a cone-beam CT (CBCT) and photos of your mouth. Based on these, we tell you whether treatment is likely. The final decision is made at your first appointment.</p></div>
     <div class="how-step"><div class="n">03</div><h4>Planning your visit</h4><p>We arrange your appointments in as few visits as possible and inform you of time and cost.</p></div>
     <div class="how-step"><div class="n">04</div><h4>Treatment & follow-up</h4><p>We complete your treatment on the island and remain available for follow-up.</p></div>
-  </div>
-</section>
-
-<section class="stay">
-  <div class="wrap stay-grid">
-    <div class="stay-photo stay-photo--img" role="img" aria-label="Little Bee accommodation with Aegean view, Antiparos"></div>
-    <div>
-      <p class="eyebrow">Staying on the island</p>
-      <h2>A peaceful retreat with Aegean views</h2>
-      <p>For your stay, we can suggest accommodation in a serene Cycladic house on Antiparos, with stunning views over the blue Aegean and a sunlit courtyard — ideal for resting before or after treatment.</p>
-      <p class="fineprint">Accommodation is optional and is a separate service, with its own booking via Airbnb. We are happy to help with information and alternative options according to your needs.</p>
-      <a class="btn btn-primary" href="https://www.airbnb.com/rooms/1071099792835933027" style="margin-top:.6rem" target="_blank" rel="noopener">See the accommodation →</a>
-    </div>
   </div>
 </section>
 
@@ -143,7 +121,7 @@
           </select>
         </div>
         <div class="field"><label for="message">Your message</label><textarea id="message" name="message" placeholder="Briefly describe what you need. You may also mention possible dates."></textarea></div>
-        <label class="check"><input type="checkbox" name="accommodation" value="yes"> I'm interested in help with accommodation on the island</label>
+        <p class="privacy-note">Please do not send medical files or medical history through this form. After first contact, we will give you a secure way to send them.</p>
         <button class="btn btn-primary" type="submit">Send enquiry</button>
         <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
       </form>
