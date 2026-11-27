@@ -201,6 +201,14 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
+    <loc>https://antiparosdental.com/photos.html</loc>
+    <xhtml:link rel="alternate" hreflang="el" href="https://antiparosdental.com/photos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://antiparosdental.com/en/photos.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://antiparosdental.com/fr/photos.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://antiparosdental.com/photos.html"/>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>https://antiparosdental.com/en/international.html</loc>
     <xhtml:link rel="alternate" hreflang="el" href="https://antiparosdental.com/international.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://antiparosdental.com/en/international.html"/>
