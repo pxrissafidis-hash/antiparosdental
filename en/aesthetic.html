@@ -46,6 +46,25 @@
 .intl-cta p{color:rgba(238,243,244,.8);max-width:50ch;margin-top:1rem}
 .intl-cta .btn{margin-top:2rem}
 @media(max-width:860px){.lead-grid,.t-grid{grid-template-columns:1fr}}
+
+.ae-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2rem}
+.ae-card{background:var(--c-sea-mist);border-radius:var(--r);padding:1.6rem}
+.ae-card h4{font-family:var(--font-display);font-size:1.25rem;color:var(--c-sea-deep);margin-bottom:.4rem}
+.ae-card p{font-size:.88rem;color:var(--c-ink-soft)}
+.ae-h2{font-family:var(--font-display);font-size:clamp(1.8rem,3.5vw,2.6rem);color:var(--c-sea-deep)}
+.ae-intro{color:var(--c-ink-soft);max-width:60ch;margin-top:1rem}
+.ae-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:2rem}
+.ae-n{font-family:var(--font-display);font-style:italic;font-size:2rem;color:var(--c-sea)}
+.ae-steps h4{font-family:var(--font-display);font-size:1.2rem;margin:.5rem 0 .4rem;color:var(--c-ink)}
+.ae-steps p{font-size:.86rem;color:var(--c-ink-soft)}
+.ae-faq details{border-bottom:1px solid var(--c-line);padding:1.3rem 0}
+.ae-faq summary{font-family:var(--font-display);font-size:1.3rem;color:var(--c-sea-deep);cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:1rem}
+.ae-faq summary::-webkit-details-marker{display:none}
+.ae-faq summary::after{content:"+";color:var(--c-sea);font-size:1.5rem;transition:.3s}
+.ae-faq details[open] summary::after{transform:rotate(45deg)}
+.ae-faq p{color:var(--c-ink-soft);margin-top:.9rem;max-width:60ch;font-size:.95rem}
+.step-row--3{grid-template-columns:repeat(3,1fr)}
+@media(max-width:860px){.ae-grid,.ae-steps,.step-row--3{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -86,16 +105,27 @@
   </div>
 </section>
 
+<section class="wrap">
+  <p class="eyebrow">Which option fits?</p>
+  <h2 class="ae-h2">We start from what you want to change</h2>
+  <div class="ae-grid">
+    <div class="ae-card"><h4>Colour</h4><p>If you like the shape of your teeth and simply want a brighter smile, whitening is usually the first choice.</p></div>
+    <div class="ae-card"><h4>Small flaws</h4><p>For small chips, gaps or asymmetries, composite veneers give a result with minimal intervention.</p></div>
+    <div class="ae-card"><h4>Shape and colour together</h4><p>When you want to change the overall look of your smile, porcelain veneers give the most stable result.</p></div>
+  </div>
+  <p class="ae-intro">We decide on the right option together, after the examination.</p>
+</section>
+
 <section class="steps">
   <div class="wrap">
     <div class="steps-head"><p class="eyebrow">Treatments</p><h2>What we offer</h2></div>
-    <div class="step-row" style="grid-template-columns:repeat(3,1fr)">
-      <div class="step"><h4>Veneers</h4><p>Thin ceramic layers that correct shape, colour and small gaps, with a natural result.</p></div>
-      <div class="step"><h4>Whitening</h4><p>Controlled whitening for a brighter smile, with the protocol carefully chosen for your case.</p></div>
-      <div class="step"><h4>Aesthetic restorations</h4><p>Fillings and restorations in a shade that perfectly matches your natural teeth.</p></div>
-      <div class="step"><h4>Smile design</h4><p>Complete smile design, taking the face and proportions into account.</p></div>
-      <div class="step"><h4>Shape correction</h4><p>Smoothing or reshaping for a more harmonious tooth line.</p></div>
-      <div class="step"><h4>Wear restoration</h4><p>Solutions for worn teeth, with an aesthetic and functional result.</p></div>
+    <div class="step-row step-row--3">
+      <div class="step"><h4>Porcelain veneers</h4><p>Thin ceramic veneers that correct shape, colour and small gaps. They require removing a thin layer of enamel and are a permanent solution.</p></div>
+      <div class="step"><h4>Composite veneers</h4><p>Resin is added directly to the tooth, usually in one visit, with little or no enamel removal. Suitable for small chips, gaps and asymmetries.</p></div>
+      <div class="step"><h4>Whitening</h4><p>In the clinic or at home with custom trays. It changes the colour of natural teeth, not of fillings or crowns.</p></div>
+      <div class="step"><h4>Digital smile design and mock-up</h4><p>We design your smile digitally and show it to you in your mouth with a mock-up, before anything irreversible is done.</p></div>
+      <div class="step"><h4>Gum contouring</h4><p>Reshaping the gum line for a more harmonious, balanced smile.</p></div>
+      <div class="step"><h4>Aesthetic restorations</h4><p>Fillings, shape correction and restoration of worn teeth, in a shade that matches your natural teeth.</p></div>
     </div>
   </div>
 </section>
@@ -123,6 +153,26 @@
       </div>
     </div>
   </div>
+</section>
+
+<section class="wrap">
+  <p class="eyebrow">The process</p>
+  <h2 class="ae-h2">Step by step, with no surprises</h2>
+  <div class="ae-steps">
+    <div><div class="ae-n">01</div><h4>Examination</h4><p>Check of teeth and gum health, photographs and a discussion of what you would like to change.</p></div>
+    <div><div class="ae-n">02</div><h4>Design</h4><p>Digital smile design and a mock-up in the mouth, so you can see the result before we begin.</p></div>
+    <div><div class="ae-n">03</div><h4>Preparation</h4><p>For porcelain veneers: preparation of the teeth, impressions and temporary veneers.</p></div>
+    <div><div class="ae-n">04</div><h4>Placement</h4><p>The laboratory needs about 5 to 7 days. Then come try-in, bonding and a check of your bite.</p></div>
+  </div>
+</section>
+
+<section class="wrap ae-faq">
+  <p class="eyebrow">Frequently asked questions</p>
+  <details open><summary>I am coming from abroad. Can porcelain veneers be done in one trip?</summary><p>Usually, yes. The laboratory needs about 5 to 7 days, so a stay of about ten days is enough in most cases. We set the exact schedule after the examination.</p></details>
+  <details><summary>Can I see the result before we start?</summary><p>Yes. With the mock-up you see the shape and size of your new teeth in your own mouth, before anything irreversible is done.</p></details>
+  <details><summary>Is the treatment painful?</summary><p>Preparation for veneers is done under local anaesthetic where needed. After whitening there may be temporary sensitivity, which passes.</p></details>
+  <details><summary>How long do veneers last?</summary><p>With proper care and regular check-ups, many years. If you clench or grind your teeth, we will suggest a night guard to protect them.</p></details>
+  <details><summary>Does whitening also whiten fillings?</summary><p>No. Whitening only changes the colour of natural teeth. That is why, when fillings are visible, we plan the treatment as a whole.</p></details>
 </section>
 
 <section class="intl-cta">

@@ -46,6 +46,25 @@
 .whitening h2{font-size:clamp(1.9rem,3.8vw,2.9rem);color:var(--c-sea-deep);margin-bottom:1.1rem}
 .whitening p{color:var(--c-ink-soft);margin-bottom:1.8rem}
 .whitening-cta{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+
+.ae-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2rem}
+.ae-card{background:var(--c-sea-mist);border-radius:var(--r);padding:1.6rem}
+.ae-card h4{font-family:var(--font-display);font-size:1.25rem;color:var(--c-sea-deep);margin-bottom:.4rem}
+.ae-card p{font-size:.88rem;color:var(--c-ink-soft)}
+.ae-h2{font-family:var(--font-display);font-size:clamp(1.8rem,3.5vw,2.6rem);color:var(--c-sea-deep)}
+.ae-intro{color:var(--c-ink-soft);max-width:60ch;margin-top:1rem}
+.ae-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:2rem}
+.ae-n{font-family:var(--font-display);font-style:italic;font-size:2rem;color:var(--c-sea)}
+.ae-steps h4{font-family:var(--font-display);font-size:1.2rem;margin:.5rem 0 .4rem;color:var(--c-ink)}
+.ae-steps p{font-size:.86rem;color:var(--c-ink-soft)}
+.ae-faq details{border-bottom:1px solid var(--c-line);padding:1.3rem 0}
+.ae-faq summary{font-family:var(--font-display);font-size:1.3rem;color:var(--c-sea-deep);cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:1rem}
+.ae-faq summary::-webkit-details-marker{display:none}
+.ae-faq summary::after{content:"+";color:var(--c-sea);font-size:1.5rem;transition:.3s}
+.ae-faq details[open] summary::after{transform:rotate(45deg)}
+.ae-faq p{color:var(--c-ink-soft);margin-top:.9rem;max-width:60ch;font-size:.95rem}
+.step-row--3{grid-template-columns:repeat(3,1fr)}
+@media(max-width:860px){.ae-grid,.ae-steps,.step-row--3{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -85,17 +104,28 @@
   </div>
 </section>
 
+<section class="wrap">
+  <p class="eyebrow">Ποια λύση ταιριάζει;</p>
+  <h2 class="ae-h2">Ξεκινάμε από αυτό που θέλετε να αλλάξει</h2>
+  <div class="ae-grid">
+    <div class="ae-card"><h4>Το χρώμα</h4><p>Αν το σχήμα των δοντιών σάς αρέσει και θέλετε μόνο πιο φωτεινό χαμόγελο, η λεύκανση είναι συνήθως η πρώτη επιλογή.</p></div>
+    <div class="ae-card"><h4>Μικρές ατέλειες</h4><p>Για μικρά σπασίματα, κενά ή ασυμμετρίες, οι όψεις ρητίνης δίνουν αποτέλεσμα με ελάχιστη παρέμβαση.</p></div>
+    <div class="ae-card"><h4>Σχήμα και χρώμα μαζί</h4><p>Όταν θέλετε να αλλάξει συνολικά η εικόνα του χαμόγελου, οι όψεις πορσελάνης δίνουν το πιο σταθερό αποτέλεσμα.</p></div>
+  </div>
+  <p class="ae-intro">Τη σωστή λύση την αποφασίζουμε μαζί, μετά την εξέταση.</p>
+</section>
+
 <section class="treatments">
   <div class="wrap">
     <p class="eyebrow">Θεραπείες</p>
     <h2 style="font-family:var(--font-display);font-size:clamp(1.8rem,3.5vw,2.6rem);color:var(--c-sea-deep)">Τι προσφέρουμε</h2>
     <div class="t-grid">
-      <div class="tcard"><h4>Όψεις (Veneers)</h4><p>Λεπτές κεραμικές επιστρώσεις που διορθώνουν σχήμα, χρώμα και μικρά κενά, με φυσικό αποτέλεσμα.</p></div>
-      <div class="tcard"><h4>Λεύκανση</h4><p>Ελεγχόμενη λεύκανση για ένα πιο φωτεινό χαμόγελο, με προσεκτική επιλογή του πρωτοκόλλου.</p></div>
-      <div class="tcard"><h4>Αισθητικές αποκαταστάσεις</h4><p>Σφραγίσματα και αποκαταστάσεις σε απόχρωση που ταιριάζει απόλυτα με τα φυσικά σας δόντια.</p></div>
-      <div class="tcard"><h4>Smile design</h4><p>Ολοκληρωμένος σχεδιασμός χαμόγελου, με συνυπολογισμό προσώπου και αναλογιών.</p></div>
-      <div class="tcard"><h4>Διόρθωση σχήματος</h4><p>Λείανση ή αναδιαμόρφωση για πιο αρμονική γραμμή των δοντιών.</p></div>
-      <div class="tcard"><h4>Αποκατάσταση φθοράς</h4><p>Λύσεις για δόντια που έχουν φθαρεί, με αισθητικό και λειτουργικό αποτέλεσμα.</p></div>
+      <div class="tcard"><h4>Όψεις πορσελάνης</h4><p>Λεπτές κεραμικές όψεις που διορθώνουν σχήμα, χρώμα και μικρά κενά. Απαιτούν αφαίρεση ενός λεπτού στρώματος σμάλτου και είναι μόνιμη λύση.</p></div>
+      <div class="tcard"><h4>Όψεις ρητίνης</h4><p>Η ρητίνη προστίθεται απευθείας στο δόντι, συνήθως σε μία επίσκεψη, με ελάχιστη ή καμία αφαίρεση σμάλτου. Κατάλληλες για μικρά σπασίματα, κενά και ασυμμετρίες.</p></div>
+      <div class="tcard"><h4>Λεύκανση</h4><p>Στο ιατρείο ή κατ’ οίκον, με εξατομικευμένους νάρθηκες. Αλλάζει το χρώμα των φυσικών δοντιών, όχι των σφραγισμάτων ή των στεφανών.</p></div>
+      <div class="tcard"><h4>Ψηφιακός σχεδιασμός και mock-up</h4><p>Σχεδιάζουμε το χαμόγελο ψηφιακά και σας το δείχνουμε στο στόμα με mock-up, πριν από οποιαδήποτε μη αναστρέψιμη παρέμβαση.</p></div>
+      <div class="tcard"><h4>Διαμόρφωση ούλων</h4><p>Ρύθμιση της γραμμής των ούλων, για ένα πιο αρμονικό και ισορροπημένο χαμόγελο.</p></div>
+      <div class="tcard"><h4>Αισθητικές αποκαταστάσεις</h4><p>Σφραγίσματα, διόρθωση σχήματος και αποκατάσταση φθοράς, σε απόχρωση που ταιριάζει με τα φυσικά σας δόντια.</p></div>
     </div>
   </div>
 </section>
@@ -119,6 +149,26 @@
   <h2>Πρώτα η υγεία, μετά η αισθητική</h2>
   <p>Ένα όμορφο χαμόγελο χτίζεται σε γερά θεμέλια. Πριν από οποιαδήποτε αισθητική παρέμβαση, βεβαιωνόμαστε ότι τα δόντια και τα ούλα είναι υγιή — γιατί μόνο έτσι το αποτέλεσμα διαρκεί.</p>
   <p>Θα σας εξηγήσουμε με ειλικρίνεια τι είναι εφικτό, ποιες είναι οι επιλογές σας και τι να περιμένετε ρεαλιστικά.</p>
+</section>
+
+<section class="wrap">
+  <p class="eyebrow">Η διαδικασία</p>
+  <h2 class="ae-h2">Βήμα-βήμα, χωρίς εκπλήξεις</h2>
+  <div class="ae-steps">
+    <div><div class="ae-n">01</div><h4>Εξέταση</h4><p>Έλεγχος υγείας δοντιών και ούλων, φωτογραφίες και συζήτηση για το τι θέλετε να αλλάξει.</p></div>
+    <div><div class="ae-n">02</div><h4>Σχεδιασμός</h4><p>Ψηφιακός σχεδιασμός και mock-up στο στόμα, για να δείτε το αποτέλεσμα πριν ξεκινήσουμε.</p></div>
+    <div><div class="ae-n">03</div><h4>Προετοιμασία</h4><p>Για όψεις πορσελάνης: προετοιμασία των δοντιών, αποτύπωση και προσωρινές όψεις.</p></div>
+    <div><div class="ae-n">04</div><h4>Τοποθέτηση</h4><p>Το εργαστήριο χρειάζεται περίπου 5 έως 7 ημέρες. Ακολουθούν δοκιμή, συγκόλληση και έλεγχος της σύγκλεισης.</p></div>
+  </div>
+</section>
+
+<section class="wrap ae-faq">
+  <p class="eyebrow">Συχνές ερωτήσεις</p>
+  <details open><summary>Έρχομαι από το εξωτερικό. Γίνονται οι όψεις πορσελάνης σε ένα ταξίδι;</summary><p>Συνήθως ναι. Το εργαστήριο χρειάζεται περίπου 5 έως 7 ημέρες, οπότε μια παραμονή περίπου δέκα ημερών αρκεί στις περισσότερες περιπτώσεις. Το ακριβές πρόγραμμα το ορίζουμε μετά την εξέταση.</p></details>
+  <details><summary>Μπορώ να δω το αποτέλεσμα πριν ξεκινήσουμε;</summary><p>Ναι. Με το mock-up βλέπετε το σχήμα και το μέγεθος των νέων δοντιών στο στόμα σας, πριν από οποιαδήποτε μη αναστρέψιμη παρέμβαση.</p></details>
+  <details><summary>Πονάει η θεραπεία;</summary><p>Η προετοιμασία για όψεις γίνεται με τοπική αναισθησία όπου χρειάζεται. Μετά τη λεύκανση μπορεί να υπάρξει παροδική ευαισθησία, που υποχωρεί.</p></details>
+  <details><summary>Πόσο διαρκούν οι όψεις;</summary><p>Με σωστή φροντίδα και τακτικό έλεγχο, πολλά χρόνια. Αν σφίγγετε ή τρίζετε τα δόντια, θα σας προτείνουμε νάρθηκα νυκτός για να τις προστατεύσετε.</p></details>
+  <details><summary>Η λεύκανση λευκαίνει και τα σφραγίσματα;</summary><p>Όχι. Η λεύκανση αλλάζει μόνο το χρώμα των φυσικών δοντιών. Γι’ αυτό, όταν υπάρχουν εμφανή σφραγίσματα, σχεδιάζουμε τη θεραπεία συνολικά.</p></details>
 </section>
 
 <section class="intl-cta">
