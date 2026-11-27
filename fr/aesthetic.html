@@ -46,6 +46,25 @@
 .intl-cta p{color:rgba(238,243,244,.8);max-width:50ch;margin-top:1rem}
 .intl-cta .btn{margin-top:2rem}
 @media(max-width:860px){.lead-grid,.t-grid{grid-template-columns:1fr}}
+
+.ae-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2rem}
+.ae-card{background:var(--c-sea-mist);border-radius:var(--r);padding:1.6rem}
+.ae-card h4{font-family:var(--font-display);font-size:1.25rem;color:var(--c-sea-deep);margin-bottom:.4rem}
+.ae-card p{font-size:.88rem;color:var(--c-ink-soft)}
+.ae-h2{font-family:var(--font-display);font-size:clamp(1.8rem,3.5vw,2.6rem);color:var(--c-sea-deep)}
+.ae-intro{color:var(--c-ink-soft);max-width:60ch;margin-top:1rem}
+.ae-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:2rem}
+.ae-n{font-family:var(--font-display);font-style:italic;font-size:2rem;color:var(--c-sea)}
+.ae-steps h4{font-family:var(--font-display);font-size:1.2rem;margin:.5rem 0 .4rem;color:var(--c-ink)}
+.ae-steps p{font-size:.86rem;color:var(--c-ink-soft)}
+.ae-faq details{border-bottom:1px solid var(--c-line);padding:1.3rem 0}
+.ae-faq summary{font-family:var(--font-display);font-size:1.3rem;color:var(--c-sea-deep);cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:1rem}
+.ae-faq summary::-webkit-details-marker{display:none}
+.ae-faq summary::after{content:"+";color:var(--c-sea);font-size:1.5rem;transition:.3s}
+.ae-faq details[open] summary::after{transform:rotate(45deg)}
+.ae-faq p{color:var(--c-ink-soft);margin-top:.9rem;max-width:60ch;font-size:.95rem}
+.step-row--3{grid-template-columns:repeat(3,1fr)}
+@media(max-width:860px){.ae-grid,.ae-steps,.step-row--3{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -86,16 +105,27 @@
   </div>
 </section>
 
+<section class="wrap">
+  <p class="eyebrow">Quelle solution vous convient ?</p>
+  <h2 class="ae-h2">Nous partons de ce que vous souhaitez changer</h2>
+  <div class="ae-grid">
+    <div class="ae-card"><h4>La couleur</h4><p>Si la forme de vos dents vous plaît et que vous souhaitez simplement un sourire plus lumineux, le blanchiment est généralement le premier choix.</p></div>
+    <div class="ae-card"><h4>De petites imperfections</h4><p>Pour de petites fractures, des espaces ou des asymétries, les facettes en composite donnent un résultat avec une intervention minimale.</p></div>
+    <div class="ae-card"><h4>Forme et couleur ensemble</h4><p>Lorsque vous souhaitez changer l’aspect global de votre sourire, les facettes en céramique offrent le résultat le plus stable.</p></div>
+  </div>
+  <p class="ae-intro">Nous choisissons ensemble la bonne solution, après l’examen.</p>
+</section>
+
 <section class="steps">
   <div class="wrap">
     <div class="steps-head"><p class="eyebrow">Traitements</p><h2>Ce que nous proposons</h2></div>
-    <div class="step-row" style="grid-template-columns:repeat(3,1fr)">
-      <div class="step"><h4>Facettes</h4><p>Fines couches céramiques qui corrigent la forme, la couleur et les petits espaces, avec un résultat naturel.</p></div>
-      <div class="step"><h4>Blanchiment</h4><p>Blanchiment contrôlé pour un sourire plus lumineux, avec un protocole choisi avec soin selon votre cas.</p></div>
-      <div class="step"><h4>Restaurations esthétiques</h4><p>Obturations et restaurations dans une teinte qui s'accorde parfaitement à vos dents naturelles.</p></div>
-      <div class="step"><h4>Conception du sourire</h4><p>Conception complète du sourire, en tenant compte du visage et des proportions.</p></div>
-      <div class="step"><h4>Correction de forme</h4><p>Polissage ou remodelage pour une ligne dentaire plus harmonieuse.</p></div>
-      <div class="step"><h4>Restauration de l'usure</h4><p>Solutions pour les dents usées, avec un résultat esthétique et fonctionnel.</p></div>
+    <div class="step-row step-row--3">
+      <div class="step"><h4>Facettes en céramique</h4><p>Fines facettes céramiques qui corrigent la forme, la couleur et les petits espaces. Elles nécessitent le retrait d’une fine couche d’émail et sont une solution définitive.</p></div>
+      <div class="step"><h4>Facettes en composite</h4><p>La résine est ajoutée directement sur la dent, généralement en une séance, avec peu ou pas de retrait d’émail. Adaptées aux petites fractures, espaces et asymétries.</p></div>
+      <div class="step"><h4>Blanchiment</h4><p>Au cabinet ou à domicile avec des gouttières sur mesure. Il change la couleur des dents naturelles, pas celle des obturations ni des couronnes.</p></div>
+      <div class="step"><h4>Conception numérique du sourire et mock-up</h4><p>Nous concevons votre sourire numériquement et vous le montrons en bouche grâce à un mock-up, avant toute intervention irréversible.</p></div>
+      <div class="step"><h4>Remodelage gingival</h4><p>Ajustement de la ligne des gencives, pour un sourire plus harmonieux et équilibré.</p></div>
+      <div class="step"><h4>Restaurations esthétiques</h4><p>Obturations, correction de forme et restauration de l’usure, dans une teinte qui s’accorde à vos dents naturelles.</p></div>
     </div>
   </div>
 </section>
@@ -123,6 +153,26 @@
       </div>
     </div>
   </div>
+</section>
+
+<section class="wrap">
+  <p class="eyebrow">Le déroulement</p>
+  <h2 class="ae-h2">Étape par étape, sans surprise</h2>
+  <div class="ae-steps">
+    <div><div class="ae-n">01</div><h4>Examen</h4><p>Contrôle de la santé des dents et des gencives, photographies et échange sur ce que vous souhaitez changer.</p></div>
+    <div><div class="ae-n">02</div><h4>Conception</h4><p>Conception numérique du sourire et mock-up en bouche, pour voir le résultat avant de commencer.</p></div>
+    <div><div class="ae-n">03</div><h4>Préparation</h4><p>Pour les facettes en céramique : préparation des dents, empreintes et facettes provisoires.</p></div>
+    <div><div class="ae-n">04</div><h4>Pose</h4><p>Le laboratoire a besoin d’environ 5 à 7 jours. Viennent ensuite l’essayage, le collage et le contrôle de l’occlusion.</p></div>
+  </div>
+</section>
+
+<section class="wrap ae-faq">
+  <p class="eyebrow">Questions fréquentes</p>
+  <details open><summary>Je viens de l’étranger. Les facettes en céramique peuvent-elles se faire en un seul séjour ?</summary><p>En général, oui. Le laboratoire a besoin d’environ 5 à 7 jours : un séjour d’une dizaine de jours suffit dans la plupart des cas. Le calendrier exact est fixé après l’examen.</p></details>
+  <details><summary>Puis-je voir le résultat avant de commencer ?</summary><p>Oui. Grâce au mock-up, vous voyez la forme et la taille de vos nouvelles dents en bouche, avant toute intervention irréversible.</p></details>
+  <details><summary>Le traitement est-il douloureux ?</summary><p>La préparation des facettes se fait sous anesthésie locale si nécessaire. Après un blanchiment, une sensibilité passagère peut apparaître, puis disparaît.</p></details>
+  <details><summary>Combien de temps durent les facettes ?</summary><p>Avec des soins appropriés et des contrôles réguliers, de nombreuses années. Si vous serrez ou grincez des dents, nous vous proposerons une gouttière de nuit pour les protéger.</p></details>
+  <details><summary>Le blanchiment blanchit-il aussi les obturations ?</summary><p>Non. Le blanchiment ne change que la couleur des dents naturelles. C’est pourquoi, lorsque des obturations sont visibles, nous planifions le traitement dans son ensemble.</p></details>
 </section>
 
 <section class="intl-cta">
